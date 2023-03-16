@@ -1,0 +1,10 @@
+create database testw;
+
+use testw;
+
+create table jsplist(
+j_code int not null auto_increment,
+j_name varchar(20),
+j_link text,
+primary key(j_code)
+);
