@@ -1,0 +1,4 @@
+ALTER TABLE web_link AUTO_INCREMENT = 1;
+ALTER TABLE web_link AUTO_INCREMENT=1;
+SET @COUNT = 0;
+UPDATE web_link SET Web_Number = @COUNT:=@COUNT+1;
