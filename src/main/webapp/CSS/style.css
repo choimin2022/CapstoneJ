@@ -1,0 +1,77 @@
+
+@media <!--여기 pc->
+* {
+    margin: 0px;
+}
+.dropdown{
+    position : relative;
+    display : inline-block;
+    background-color: rgb(51, 255, 0);
+    width: 100px;
+    height: 50px;
+    float: left;
+  }
+  
+  .dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    background-color: rgb(51, 255, 0);
+    width: 100px;
+
+  }
+  
+  .dropdown-content a{
+    display : block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+textarea{
+    width: 90%;
+    margin: auto;
+}
+#top {
+    background-color: aqua;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+#list {
+    float: left;
+}
+
+#main {
+    background-color: brown;
+    height: 600px;
+    width: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    
+    overflow:auto;
+}
+
+#button {
+    background-color: azure;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+}
+#chat{
+    background-color: darkslategrey;
+    height: 100px;
+    display: flex;
+}
+#chatM{
+	background-color: blue;
+	width : 100%;
+	display: flex;
+}
+@media <!--여기까지 모바일-->
+
+
+
+
