@@ -18,7 +18,7 @@ public class web_ListDAO {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://localhost:3306/testw?serverTimezone=UTC";
 			String user = "root";
-			String pwd = "alspfkf123";
+			String pwd = "1701024";
 			conn = DriverManager.getConnection(url,user,pwd);
 		}
 		catch(ClassNotFoundException e) {System.out.println("MySQL 드라이버가 없습니다.<br/>");}

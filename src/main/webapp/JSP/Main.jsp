@@ -17,8 +17,10 @@
 <title>Insert title here</title>
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-<script src="https://code.jquery.com/jquery-1.8.3.min.js"integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8="crossorigin="anonymous"></script>
+	href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+<script src="https://code.jquery.com/jquery-1.8.3.min.js"
+	integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8="
+	crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 
@@ -27,47 +29,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
 <script src="ChatJ.js"></script>
 
 <script>
-$(function() {
-	$("input[type='text']").keypress(
-			function(e) {
-				if (e.keyCode == 13 && $(this).val().length) {
-					var _val = $(this).val();
-					var _class = $(this).attr("class");
-					$(this).val('');
-					var _tar = $(".chat_wrap .inner")
-							.append(
-									'<div class="item '+_class+'"><div class="box"><p class="msg">'
-											+ _val
-											+ '</p><span class="time">'
-											+ currentTime()
-											+ '</span></div></div>');
+	$(function() {
+		$("input[type='text']").keypress(
+				function(e) {
+					if (e.keyCode == 13 && $(this).val().length) {
+						var _val = $(this).val();
+						var _class = $(this).attr("class");
+						$(this).val('');
+						var _tar = $(".chat_wrap .inner")
+								.append(
+										'<div class="item '+_class+'"><div class="box"><p class="msg">'
+												+ _val
+												+ '</p><span class="time">'
+												+ currentTime()
+												+ '</span></div></div>');
 
-					var lastItem = $(".chat_wrap .inner")
-							.find(".item:last");
-					setTimeout(function() {
-						lastItem.addClass("on");
-					}, 10);
+						var lastItem = $(".chat_wrap .inner")
+								.find(".item:last");
+						setTimeout(function() {
+							lastItem.addClass("on");
+						}, 10);
 
-					var position = lastItem.position().top
-							+ $(".chat_wrap .inner").scrollTop();
-					console.log(position);
+						var position = lastItem.position().top
+								+ $(".chat_wrap .inner").scrollTop();
+						console.log(position);
 
-					$(".chat_wrap .inner").stop().animate({
-						scrollTop : position
-					}, 500);
-				}
-			});
+						$(".chat_wrap .inner").stop().animate({
+							scrollTop : position
+						}, 500);
+					}
+				});
 
-});
+	});
 
-var currentTime = function() {
-	var date = new Date();
-	var hh = date.getHours();
-	var mm = date.getMinutes();
-	var apm = hh > 12 ? "오후" : "오전";
-	var ct = apm + " " + hh + ":" + mm + "";
-	return ct;
-}
+	var currentTime = function() {
+		var date = new Date();
+		var hh = date.getHours();
+		var mm = date.getMinutes();
+		var apm = hh > 12 ? "오후" : "오전";
+		var ct = apm + " " + hh + ":" + mm + "";
+		return ct;
+	}
 </script>
 
 <!-- -------------------------------------------------------------------- -->
@@ -156,37 +158,47 @@ var currentTime = function() {
     </div> -->
 					<div class="item yourmsg on">
 						<div class="box">
-		
-				<p class="msg" >
-												<%
-					Connection conn2 = webDAO.getMySQLConnection();
-					String webList = "select * from web_link";
 
-					PreparedStatement pstmt2 = conn2.prepareStatement(webList);
-					ResultSet rs2 = pstmt2.executeQuery();
-					while (rs2.next()) {
-						web_number = rs2.getInt("web_number");
-						web_code = rs2.getString("web_code");
-						web_name = rs2.getString("web_name");
-						web_contents = rs2.getString("web_contents");
-						web_url = rs2.getString("web_url");
-						total++;
-					%>
-				<input type="button" name=b0 value="<%=web_name%>"
-						onclick="location.href='<%=web_url%>'" />
-						
+							<p class="msg">
 								<%
-					}
-					%>
-						</p>
-			
+								Connection conn2 = webDAO.getMySQLConnection();
+								String webList = "select * from web_link";
+
+								PreparedStatement pstmt2 = conn2.prepareStatement(webList);
+								ResultSet rs2 = pstmt2.executeQuery();
+								while (rs2.next()) {
+									web_number = rs2.getInt("web_number");
+									web_code = rs2.getString("web_code");
+									web_name = rs2.getString("web_name");
+									web_contents = rs2.getString("web_contents");
+									web_url = rs2.getString("web_url");
+									total++;
+								%>
+								<input type="button" name=b0 value="<%=web_name%>"
+									onclick="location.href='<%=web_url%>'" />
+
+								<%
+								}
+								%>
+							</p>
+
+						</div>
+					</div>
+					<div class="item yourmsg on">
+						<div class="box">
+							<p class="msg">
+								컴퓨터 정보 계열 챗봇에 오신 것을 환영합니다! 컴퓨터 정보 계열은 4개의 과로 이뤄져 있으며, 매년 80% 이상
+								최고의 취업률을 보이고 있습니다. 계열 안내 및 계열부장 인사말을 보시려면 아래 메뉴를 클릭해주세요 <input
+									type="button" name="b0" value="계열안내"
+									onclick="location.href='https://com.yju.ac.kr/index.php?mid=page_OXGJ16'">
+							</p>
 						</div>
 					</div>
 				</div>
 
 
 
-				<input type="text" class="mymsg" placeholder="내용 입력"> 
+				<input type="text" class="mymsg" placeholder="내용 입력">
 				<!-- <input type="text" class="yourmsg" placeholder="내용 입력"> -->
 			</div>
 
