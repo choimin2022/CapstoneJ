@@ -187,7 +187,7 @@
 					<div class="item yourmsg on">
 						<div class="box">
 							<p class="msg">
-								테스트 입니다.
+								테스트 입니다.s
 								컴퓨터 정보 계열 챗봇에 오신 것을 환영합니다! 컴퓨터 정보 계열은 4개의 과로 이뤄져 있으며, 매년 80% 이상
 								최고의 취업률을 보이고 있습니다. 계열 안내 및 계열부장 인사말을 보시려면 아래 메뉴를 클릭해주세요 <input
 									type="button" name="b0" value="계열안내"
