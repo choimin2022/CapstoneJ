@@ -13,10 +13,10 @@ public class webDAO {
 		Connection conn = null;
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			String url = "jdbc:mysql://localhost:3306/capstondsign?serverTimezone=UTC";
 			String user = "root";
-			String pwd = "alspfkf123";
+			String pwd = "0000";
 			conn = DriverManager.getConnection(url,user,pwd);
 		}
 		catch(ClassNotFoundException e) {System.out.println("MySQL 드라이버가 없습니다.<br/>");}
