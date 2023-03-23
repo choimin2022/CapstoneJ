@@ -178,7 +178,14 @@
 
 
 
-			<input type="text" class="mymsg" placeholder="내용 입력">
+			
+<input type="text" class="mymsg" placeholder="내용 입력" list="searchOptions"/>
+			<datalist id="searchOptions">
+		<option value="계열 소개"/>
+		<option value="입학 문의"/>
+		<option value="성적 문의"/>
+		<option value="휴/복학 문의"/>
+</datalist>
 			<!-- <input type="text" class="yourmsg" placeholder="내용 입력"> -->
 		</div>
 
