@@ -1,7 +1,7 @@
 .chat_wrap {
 	border: 1px solid #999;
 	width: 100%;
-	padding: 5px;
+	height:85vh;
 	font-size: 13px;
 	color: #333
 }
@@ -11,7 +11,7 @@
 	border-radius: 5px;
 	padding: 10px;
 	overflow-y: scroll;
-	height: 400px;
+	height:100%;
 }
 
 .chat_wrap .item {
@@ -24,7 +24,7 @@
 
 .chat_wrap .item .box {
 	display: inline-block;
-	max-width: 180px;
+	max-width: 200px;
 	position: relative
 }
 
@@ -44,6 +44,7 @@
 	padding: 8px;
 	text-align: left;
 	word-break: break-word;
+	line-height: 120%;
 }
 
 .chat_wrap .item .box .time {
@@ -97,9 +98,9 @@ input[type="text"] {
 	background: #ddd;
 	border-radius: 5px;
 	height: 30px;
-	padding-left: 5px;
+	/*padding-left: 5px;*/
 	box-sizing: border-box;
-	margin-top: 5px
+/*	margin-top: 5px*/
 }
 
 input[type="text"]::placeholder {
