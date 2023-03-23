@@ -84,10 +84,6 @@
 	BufferedReader rd = null;
 	String filePath;
 
-	request.setCharacterEncoding("UTF-8");
-	int j_code;
-	String j_name = request.getParameter("j_name");
-	String j_link = request.getParameter("j_link");
 	//-------------------------------------------------------------------------
 	int web_number;
 	String web_code = request.getParameter("web_code");
@@ -105,17 +101,7 @@
 			j_code=Integer.parseInt(request.getParameter("j_code"));	
 		}*/
 
-	Connection conn = web_ListDAO.getMySQLConnection();
-	//웹링크 내용을 모두 불러온다.
-	String jspList = "select * from jsplist";
 
-	PreparedStatement pstmt = conn.prepareStatement(jspList);
-	ResultSet rs = pstmt.executeQuery();
-	if (rs.next()) {
-		j_code = rs.getInt("j_code");
-		j_name = rs.getString("j_name");
-		j_link = rs.getString("j_link");
-	}
 	//-----------------------------------------------------------
 	%>
 
@@ -206,10 +192,7 @@
 
 
 	<%
-	//DB종료
-	web_ListDAO.close(rs);
-	web_ListDAO.close(pstmt);
-	web_ListDAO.close(conn);
+
 	//----------------------------
 	webDAO.close(rs2);
 	webDAO.close(pstmt2);
