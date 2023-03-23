@@ -98,4 +98,4 @@ function displayMessage(message) {
   newMessage.className = 'message';
   newMessage.innerHTML = message;
   chatBox.appendChild(newMessage);
-}
+} // 시간 표시 할 수 있으면 해보기

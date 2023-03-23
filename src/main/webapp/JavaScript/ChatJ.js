@@ -39,3 +39,16 @@ $(function() {
 		var ct = apm + " " + hh + ":" + mm + "";
 		return ct;
 	}
+	
+	
+	const datalistOptions = document.querySelectorAll('#searchOptions option');
+	// Add event listeners to datalist options for click events
+datalistOptions.forEach(option => {
+  option.addEventListener('click', event => {
+    const selectedOption = event.target.value;
+    inputField.value = selectedOption;
+    // Simulate a keydown event to submit chat message
+    const enterKeyEvent = new KeyboardEvent('keydown', { key: 'Enter' });
+    inputField.dispatchEvent(enterKeyEvent);
+  });
+});
