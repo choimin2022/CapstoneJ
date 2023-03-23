@@ -101,7 +101,7 @@
 			j_code=Integer.parseInt(request.getParameter("j_code"));	
 		}*/
 
-
+//ㅇㅇ
 	//-----------------------------------------------------------
 	%>
 
