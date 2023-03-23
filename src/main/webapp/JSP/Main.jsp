@@ -3,11 +3,9 @@
 
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*"%>
-<%@ page import="web_list.web_ListDAO"%>
-<%@ page import="web_list.web_ListDTO"%>
-<!--web_link-->
-<%@ page import="web_link.webDTO"%>
-<%@ page import="web_link.webDAO"%>
+<%@ page import="DBConnect.webDAO"%> <!-- mysql 연동 -->
+<%@ page import="web_con.web_conDTO"%> <!-- web_con 필드 -->
+<%@ page import="web_name.web_nameDTO"%> <!-- web_name 필드 -->
 
 
 <!DOCTYPE html>
@@ -83,27 +81,34 @@
 	<%
 	BufferedReader rd = null;
 	String filePath;
+	request.setCharacterEncoding("UTF-8");
 
-	//-------------------------------------------------------------------------
-	int web_number;
+//---------------------------------------------------------------
 	String web_code = request.getParameter("web_code");
-	String web_name = request.getParameter("web_name");
-	String web_contents = request.getParameter("web_contents");
-	String web_url = request.getParameter("web_url");
-	int total = 0;
-
-	if (request.getParameter("web_number") != null) {
-		web_number = Integer.parseInt(request.getParameter("web_number"));
-	}
-
+	String web_name = request.getParameter("web_name");;
+	String web_url  = request.getParameter("web_url");;
+//----------------------------------------
+	String con_link = request.getParameter("con_link");
+	
+//------------------------------------------
 	//getParameter은 String방식으로 들고오기 때문에 int형으로 변형해줘야 된다.	
 	/*	if(request.getParameter("j_code") !=null){
 			j_code=Integer.parseInt(request.getParameter("j_code"));	
 		}*/
 
-//ㅇㅇ
+	Connection conn = webDAO.MySQLDBConnection();
+	//웹링크 내용을 모두 불러온다.
+	String web_con = "select * from web_con";
+
+	PreparedStatement pstmt = conn.prepareStatement(web_con);
+	ResultSet rs = pstmt.executeQuery();
+	if (rs.next()) {
+		web_code = rs.getString("web_code");
+		con_link = rs.getString("con_link");
+	}
 	//-----------------------------------------------------------
 	%>
+
 
 	<!--상단 드롭메뉴-->
 
@@ -141,18 +146,15 @@
 
 						<p class="msg">
 							<%
-							Connection conn2 = webDAO.getMySQLConnection();
-							String webList = "select * from web_link";
+							Connection conn2 = webDAO.MySQLDBConnection();
+							String webList = "select * from web_name";
 
 							PreparedStatement pstmt2 = conn2.prepareStatement(webList);
 							ResultSet rs2 = pstmt2.executeQuery();
 							while (rs2.next()) {
-								web_number = rs2.getInt("web_number");
 								web_code = rs2.getString("web_code");
 								web_name = rs2.getString("web_name");
-								web_contents = rs2.getString("web_contents");
 								web_url = rs2.getString("web_url");
-								total++;
 							%>
 							<input type="button" name=b0 value="<%=web_name%>"
 								onclick="location.href='<%=web_url%>'" />
