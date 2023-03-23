@@ -8,7 +8,7 @@
 }
 
 .chat_wrap .inner {
-	background-color: #acc2d2;
+	background-color: #d3d1ce;
 	border-radius: 5px;
 	padding: 10px;
 	overflow-y: scroll;
@@ -40,7 +40,7 @@
 }
 
 .chat_wrap .item .box .msg {
-	background: #fff;
+	background: #f6f6f6;
 	border-radius: 10px;
 	padding: 8px;
 	text-align: left;
@@ -69,9 +69,8 @@
 }
 
 .chat_wrap .item.mymsg .box .msg {
-	background: #fee600
+	background: #ffd860;
 }
-
 .chat_wrap .item.mymsg .box .time {
 	right: auto;
 	left: -75px

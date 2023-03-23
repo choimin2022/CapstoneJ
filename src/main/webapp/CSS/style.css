@@ -8,13 +8,14 @@ textarea {
 }
 
 #top {
-	background-color: yellow;
+	background-color:#75aafe;
 	text-align: center;
 	height: 5vh; width : 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	padding: 0px;
 }
 
 #button {
