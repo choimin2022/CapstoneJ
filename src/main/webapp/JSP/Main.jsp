@@ -3,9 +3,12 @@
 
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*"%>
-<%@ page import="DBConnect.webDAO"%> <!-- mysql 연동 -->
-<%@ page import="web_con.web_conDTO"%> <!-- web_con 필드 -->
-<%@ page import="web_name.web_nameDTO"%> <!-- web_name 필드 -->
+<%@ page import="DBConnect.webDAO"%>
+<!-- mysql 연동 -->
+<%@ page import="web_con.web_conDTO"%>
+<!-- web_con 필드 -->
+<%@ page import="web_name.web_nameDTO"%>
+<!-- web_name 필드 -->
 
 
 <!DOCTYPE html>
@@ -83,14 +86,16 @@
 	String filePath;
 	request.setCharacterEncoding("UTF-8");
 
-//---------------------------------------------------------------
+	//---------------------------------------------------------------
 	String web_code = request.getParameter("web_code");
-	String web_name = request.getParameter("web_name");;
-	String web_url  = request.getParameter("web_url");;
-//----------------------------------------
+	String web_name = request.getParameter("web_name");
+	;
+	String web_url = request.getParameter("web_url");
+	;
+	//----------------------------------------
 	String con_link = request.getParameter("con_link");
-	
-//------------------------------------------
+
+	//------------------------------------------
 	//getParameter은 String방식으로 들고오기 때문에 int형으로 변형해줘야 된다.	
 	/*	if(request.getParameter("j_code") !=null){
 			j_code=Integer.parseInt(request.getParameter("j_code"));	
@@ -116,6 +121,7 @@
 		<div id="top">
 
 			<!--상단바-->
+			<img class="tiger" alt="image" src="character_mini.jpg">
 			<h1>컴정챗봇</h1>
 		</div>
 
@@ -142,6 +148,7 @@
         </div>
     </div> -->
 				<div class="item yourmsg on">
+					<img class="tiger_chat" alt="image" src="character_mini.jpg">
 					<div class="box">
 
 						<p class="msg">
@@ -167,6 +174,8 @@
 					</div>
 				</div>
 				<div class="item yourmsg on">
+					<img class="tiger_chat" alt="image" src="character_mini.jpg">
+
 					<div class="box">
 						<p class="msg">
 							테스트 입니다.ss 컴퓨터 정보 계열 챗봇에 오신 것을 환영합니다! 컴퓨터 정보 계열은 4개의 과로 이뤄져 있으며,
@@ -180,14 +189,15 @@
 
 
 
-			
-<input type="text" class="mymsg" placeholder="내용 입력" list="searchOptions"/>
+
+			<input type="text" class="mymsg" placeholder="내용 입력"
+				list="searchOptions" />
 			<datalist id="searchOptions">
-		<option value="계열 소개"/>
-		<option value="입학 문의"/>
-		<option value="성적 문의"/>
-		<option value="휴/복학 문의"/>
-</datalist>
+				<option value="계열 소개" />
+				<option value="입학 문의" />
+				<option value="성적 문의" />
+				<option value="휴/복학 문의" />
+			</datalist>
 			<!-- <input type="text" class="yourmsg" placeholder="내용 입력"> -->
 		</div>
 
@@ -195,13 +205,12 @@
 
 
 	</div>
-	
-<!-- test -->
 
-<!-- dffd -->
+	<!-- test -->
+
+	<!-- dffd -->
 
 	<%
-
 	//----------------------------
 	webDAO.close(rs2);
 	webDAO.close(pstmt2);

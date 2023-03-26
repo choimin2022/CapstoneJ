@@ -6,11 +6,21 @@ textarea {
 	width: 90%;
 	margin: 0 auto;
 }
+.tiger{
+	width: 5vh;
+	height: 6vh;
 
+	}
+	.tiger_chat{
+	width: 5vh;
+	height: 6vh;
+	float: left;
+	padding-right: 5px;
+	}
 #top {
 	background-color:#75aafe;
 	text-align: center;
-	height: 5vh; width : 100%;
+	height: 7vh; width : 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
