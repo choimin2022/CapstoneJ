@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="java.io.*, java.nio.charset.StandardCharsets" %>
 
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*"%>
@@ -70,6 +71,19 @@
 		var apm = hh > 12 ? "오후" : "오전";
 		var ct = apm + " " + hh + ":" + mm + "";
 		return ct;
+	}
+	
+	function addButton(num) {
+	    var xmlhttp = new XMLHttpRequest();
+	    xmlhttp.onreadystatechange = function() {
+	        if (this.readyState == 4 && this.status == 200) {
+	            var responseText = this.responseText;
+	            var msg = document.querySelector(".item");
+	            msg.innerHTML += responseText;
+	        }
+	    };
+	    xmlhttp.open("GET", "ButtonAction.jsp?num=" + num, true);
+	    xmlhttp.send();
 	}
 </script>
 
@@ -153,38 +167,30 @@
 
 						<p class="msg">
 							<%
-							Connection conn2 = webDAO.MySQLDBConnection();
-							String webList = "select * from web_name";
+            Connection conn2 = webDAO.MySQLDBConnection();
+            String webList = "select * from web_name";
 
-							PreparedStatement pstmt2 = conn2.prepareStatement(webList);
-							ResultSet rs2 = pstmt2.executeQuery();
-							while (rs2.next()) {
-								web_code = rs2.getString("web_code");
-								web_name = rs2.getString("web_name");
-								web_url = rs2.getString("web_url");
-							%>
-							<input type="button" name=b0 value="<%=web_name%>"
-								onclick="location.href='<%=web_url%>'" />
-
+            PreparedStatement pstmt2 = conn2.prepareStatement(webList);
+            ResultSet rs2 = pstmt2.executeQuery();
+          
+            int count = 1;
+            while (rs2.next()) {
+                web_code = rs2.getString("web_code");
+                web_name = rs2.getString("web_name");
+                web_url = rs2.getString("web_url");
+            %>
+							<input type="button" name="<%=count%>" value="<%=web_name%>"
+								onclick="addButton(<%=count%>)" /><br>
 							<%
-							}
-							%>
+                count++;
+            }
+            %>
+
 						</p>
 
 					</div>
 				</div>
-				<div class="item yourmsg on">
-					<img class="tiger_chat" alt="image" src="character_mini.jpg">
-
-					<div class="box">
-						<p class="msg">
-							테스트 입니다.ss 컴퓨터 정보 계열 챗봇에 오신 것을 환영합니다! 컴퓨터 정보 계열은 4개의 과로 이뤄져 있으며,
-							매년 80% 이상 최고의 취업률을 보이고 있습니다. 계열 안내 및 계열부장 인사말을 보시려면 아래 메뉴를 클릭해주세요<br>
-							<input type="button" name="b0" value="계열안내"
-								onclick="location.href='https://com.yju.ac.kr/index.php?mid=page_OXGJ16'">
-						</p>
-					</div>
-				</div>
+				
 			</div>
 
 
