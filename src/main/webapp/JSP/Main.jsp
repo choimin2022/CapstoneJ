@@ -28,52 +28,12 @@
 
 
 <link rel="stylesheet" type="text/css" href="../CSS/chatForm.css">
-<script src="ChatJ.js"></script>
+
+<script src="../JavaScript/ChatJ.js"></script>
+<script src= "../JavaScript/chatpost.js"></script>
 
 <script>
-	$(function() {
-		$("input[type='text']").keypress(
-				function(e) {
-					if (e.keyCode == 13 && $(this).val().length) {
-						var _val = $(this).val();
-						var _class = $(this).attr("class");
-						$(this).val('');
-						var _tar = $(".chat_wrap .inner")
-								.append(
-										'<div class="item '+_class+'"><div class="box"><p class="msg">'
-												+ _val
-												+ '</p><span class="time">'
-												+ currentTime()
-												+ '</span></div></div>');
-
-						var lastItem = $(".chat_wrap .inner")
-								.find(".item:last");
-						setTimeout(function() {
-							lastItem.addClass("on");
-						}, 10);
-
-						var position = lastItem.position().top
-								+ $(".chat_wrap .inner").scrollTop();
-						console.log(position);
-
-						$(".chat_wrap .inner").stop().animate({
-							scrollTop : position
-						}, 500);
-					}
-				});
-
-	});
-
-	var currentTime = function() {
-		var date = new Date();
-		var hh = date.getHours();
-		var mm = date.getMinutes();
-		var apm = hh > 12 ? "오후" : "오전";
-		var ct = apm + " " + hh + ":" + mm + "";
-		return ct;
-	}
-	
-	function addButton(num) {
+function addButton(num) {
 	    var xmlhttp = new XMLHttpRequest();
 	    xmlhttp.onreadystatechange = function() {
 	        if (this.readyState == 4 && this.status == 200) {
@@ -86,7 +46,6 @@
 	    xmlhttp.send();
 	}
 </script>
-
 <!-- -------------------------------------------------------------------- -->
 
 
@@ -109,6 +68,7 @@
 	//----------------------------------------
 	String con_link = request.getParameter("con_link");
 
+
 	//------------------------------------------
 	//getParameter은 String방식으로 들고오기 때문에 int형으로 변형해줘야 된다.	
 	/*	if(request.getParameter("j_code") !=null){
@@ -118,7 +78,6 @@
 	Connection conn = webDAO.MySQLDBConnection();
 	//웹링크 내용을 모두 불러온다.
 	String web_con = "select * from web_con";
-
 	PreparedStatement pstmt = conn.prepareStatement(web_con);
 	ResultSet rs = pstmt.executeQuery();
 	if (rs.next()) {
@@ -166,9 +125,9 @@
 					<div class="box">
 
 						<p class="msg">
-							<%
+							               <%
             Connection conn2 = webDAO.MySQLDBConnection();
-            String webList = "select * from web_name";
+            String webList = "select n.*, c.con_link from web_name n left join web_con c on n.web_code = c.web_code";
 
             PreparedStatement pstmt2 = conn2.prepareStatement(webList);
             ResultSet rs2 = pstmt2.executeQuery();
@@ -178,15 +137,16 @@
                 web_code = rs2.getString("web_code");
                 web_name = rs2.getString("web_name");
                 web_url = rs2.getString("web_url");
+                con_link = rs.getString("con_link");
             %>
-							<input type="button" name="<%=count%>" value="<%=web_name%>"
-								onclick="addButton(<%=count%>)" /><br>
-							<%
+                     <input type="button" name="<%=count%>" value="<%=web_name%>"
+                        onclick="addButton(<%=count%>)" /><br>
+                     <%
                 count++;
             }
             %>
 
-						</p>
+						</p><span class="time">currentTime()</span>
 
 					</div>
 				</div>
@@ -211,6 +171,9 @@
 
 
 	</div>
+ <script>
+ displayMessage("테스트 입니다.ss 컴퓨터 정보 계열 챗봇에 오신 것을 환영합니다! 컴퓨터 정보 계열은 4개의 과로 이뤄져 있으며, 매년 80% 이상 최고의 취업률을 보이고 있습니다. 계열 안내 및 계열부장 인사말을 보시려면 아래 메뉴를 클릭해주세요", "https://com.yju.ac.kr/index.php?mid=page_OXGJ16", "계열안내");
+ </script>
 
 	<!-- test -->
 
@@ -223,6 +186,10 @@
 	webDAO.close(conn2);
 	%>
 
-
+ <script> //시간 나타내는 함수
+      var time = currentTime();
+      console.log(time);
+      document.querySelector('.time').textContent = time;
+    </script>
 </body>
 </html>
