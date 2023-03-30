@@ -1,6 +1,7 @@
 /*ss*/
  body {
         margin: 0;
+        overflow-x: hidden;
       }
 textarea {
 	width: 90%;
