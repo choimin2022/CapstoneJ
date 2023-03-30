@@ -1,7 +1,7 @@
 /**/
 .chat_wrap {
 	border: 1px solid #999;
-	width: 100%;
+	width: 99.8%;
 	height:83vh;
 	font-size: 13px;
 	color: #333
@@ -10,7 +10,7 @@
 .chat_wrap .inner {
 	background-color: #d3d1ce;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 12px;
 	overflow-y: scroll;
 	height:100%;
 	width: auto;

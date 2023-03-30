@@ -9,10 +9,10 @@ $(function() {
       var lastItem = $(".chat_wrap .inner").find(".item:last");
       setTimeout(function() {
         lastItem.addClass("on");
-        sendMessage(_val) //post로 보내는 함수 오른쪽은 예시 채팅 코드  
+        sendMessage(_val) //post로 보내는 함수 오른쪽은 예시 채팅 코드 */ 
        /*setTimeout(function() {
           displayMessage("안녕하세요 영진전문대학교 챗봇입니다 무엇을 도와드릴까요?", "https://www.naver.com/", "네이버");
-        }, 700); // 답변 메시지 숫자는 딜레이  */
+        }, 700); /* 답변 메시지 숫자는 딜레이  */
       });
 
       var position = lastItem.position().top + $(".chat_wrap .inner").scrollTop();
