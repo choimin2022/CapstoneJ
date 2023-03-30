@@ -15,8 +15,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" href="img/Logo2.png">
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>컴퓨터정보계열 챗봇</title>
 
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
@@ -94,8 +95,8 @@ function addButton(num) {
 		<div id="top">
 
 			<!--상단바-->
-			<img class="tiger" alt="image" src="character_mini.jpg">
-			<h1>컴정챗봇</h1>
+			<img class="tiger" alt="image" src="img/character_top2.png">
+			<h1>와이거(Wyiger for comjeong)</h1>
 		</div>
 
 
@@ -121,7 +122,7 @@ function addButton(num) {
         </div>
     </div> -->
 				<div class="item yourmsg on">
-					<img class="tiger_chat" alt="image" src="character_mini.jpg">
+					<img class="tiger_chat" alt="image" src="img/character_main5.png">
 					<div class="box">
 
 						<p class="msg">
@@ -155,7 +156,7 @@ function addButton(num) {
 
 
 
-
+		<div class="chat-container">
 			<input type="text" class="mymsg" placeholder="내용 입력"
 				list="searchOptions" />
 			<datalist id="searchOptions">
@@ -164,6 +165,7 @@ function addButton(num) {
 				<option value="성적 문의" />
 				<option value="휴/복학 문의" />
 			</datalist>
+		</div>	
 			<!-- <input type="text" class="yourmsg" placeholder="내용 입력"> -->
 		</div>
 

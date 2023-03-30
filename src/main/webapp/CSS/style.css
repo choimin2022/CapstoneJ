@@ -6,19 +6,22 @@ textarea {
 	width: 90%;
 	margin: 0 auto;
 }
-.tiger{
-	width: 5vh;
-	height: 6vh;
-
-	}
+.tiger {
+  width: 6vh;
+  height: 6vh;
+  position: absolute;
+  top: 3%;
+  left: 39%;
+  transform: translate(-58%, -44%);
+}
 	.tiger_chat{
-	width: 5vh;
+	width: 6vh;
 	height: 6vh;
 	float: left;
-	padding-right: 5px;
+	padding-right: 10px;
 	}
 #top {
-	background-color:#75aafe;
+	background-color:#3a7fed;
 	text-align: center;
 	height: 7vh; width : 100%;
 	display: flex;
@@ -50,3 +53,11 @@ textarea {
 	height: 5vh;
 
 	}
+h1 {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 24px;
+}
+fonts {
+  font-size: 16px;
+}

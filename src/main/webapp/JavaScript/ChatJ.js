@@ -35,7 +35,7 @@ function displayMessage(message, siteAddress, buttonName) {
   }
 
   var _tar = $(".chat_wrap .inner")
-    .append('<div class="item ' + _class + '"><img class="tiger_chat" alt="image" src="character_mini.jpg"><div class="box"><p class="msg">'
+    .append('<div class="item ' + _class + '"><img class="tiger_chat" alt="image" src="img/character_main5.png"><div class="box"><p class="msg">'
       +_val
       + '<br>'
       + buttonHtml
