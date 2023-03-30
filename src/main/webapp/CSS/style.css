@@ -9,10 +9,7 @@ textarea {
 .tiger {
   width: 6vh;
   height: 6vh;
-  position: absolute;
-  top: 3%;
-  left: 39%;
-  transform: translate(-58%, -44%);
+  transform: translate(-5%, -2%);
 }
 	.tiger_chat{
 	width: 6vh;
