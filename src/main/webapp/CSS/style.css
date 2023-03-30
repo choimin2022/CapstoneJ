@@ -2,6 +2,7 @@
  body {
         margin: 0;
         overflow-x: hidden;
+        background-color: #999999;
       }
 textarea {
 	width: 90%;
@@ -13,10 +14,11 @@ textarea {
   transform: translate(-5%, -2%);
 }
 	.tiger_chat{
-	width: 6vh;
-	height: 6vh;
+	width: 35px;
+	height: 35px;
 	float: left;
 	padding-right: 10px;
+	
 	}
 #top {
 	background-color:#3a7fed;
