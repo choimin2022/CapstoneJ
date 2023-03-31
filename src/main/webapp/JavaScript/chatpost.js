@@ -25,8 +25,8 @@ function sendMessage(messages) {
 }
 
 
-// 파일을 채팅창에 출력한다
-function FMessage(message) {
+// 파일을 채팅창에 출력한다 버전1
+function Fmessage(message) {
   message.replace(/(\r\n|\n|\r)/gm, "");
   var file = message;
   var tar = $(".chat_wrap .inner").append(file);
@@ -43,5 +43,31 @@ function FMessage(message) {
   }, 500);
 }
 
+
+// 버전 2
+function Fmessage2(message) {
+  message.replace(/(\r\n|\n|\r)/gm, "");
+  var _val = message;
+  
+  var _tar = $(".chat_wrap .inner").append('<div class="item yourmsg on"><img class="tiger_chat" alt="image" src="img/character_main5.png"><div class="box"><p class="msg">'
+      +_val
+      + '</p><span class="time">'
+      + currentTime()
+      + '</span></div></div>');
+
+  var lastItem = $(".chat_wrap .inner")
+    .find(".item:last");
+  setTimeout(function() {
+    lastItem. addClass("on");
+  }, 10);
+
+  var position = lastItem.position().top
+    + $(".chat_wrap .inner").scrollTop();
+  console. log(position);
+
+  $(".chat_wrap .inner").stop().animate({
+    scrollTop: position
+  }, 500);
+}
 
 
