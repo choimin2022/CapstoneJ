@@ -150,11 +150,10 @@ function addButton(num) {
 						</p><span class="time">currentTime()</span>
 
 					</div>
+					
 				</div>
-				
+								
 			</div>
-
-
 
 		<div class="chat-container">
 			<input type="text" class="mymsg" placeholder="내용 입력"
@@ -176,6 +175,12 @@ function addButton(num) {
  <script>
  displayMessage("테스트 입니다.ss 컴퓨터 정보 계열 챗봇에 오신 것을 환영합니다! 컴퓨터 정보 계열은 4개의 과로 이뤄져 있으며, 매년 80% 이상 최고의 취업률을 보이고 있습니다. 계열 안내 및 계열부장 인사말을 보시려면 아래 메뉴를 클릭해주세요", "https://com.yju.ac.kr/index.php?mid=page_OXGJ16", "계열안내");
  </script>
+<script>
+FMessage('<div class="item yourmsg on"><img class="tiger_chat" alt="image" src="img/character_main5.png"><div class="box"><p class="msg">영진전문대학교 일자리플러스센터에서 운영하는 취업 정보센터에 오신 것을 환영합니다! 저희 취업 정보 센터에서는 채용정보와 심리검사, 지원서 작성방법들과 창업 지원과 경력 개발 시스템을 제공하고 있습니다. 취업 정보 및 센터에서 제공하는 다양한 정보를 얻고 싶으시다면 아래 메뉴를 클릭해주세요.<br><input type="button" name="b0" value="우수취업자인터뷰" onclick="window.open(\'https://ipsi.yju.ac.kr/ipsi/164/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaXBzaSUyRjg5JTJGYXJ0Y2xMaXN0LmRvJTNGaXNWaWV3TWluZSUzRGZhbHNlJTI2YmJzQ2xTZXElM0QlMjZzcmNoV3JkJTNEJTI2YmJzT3BlbldyZFNlcSUzRDExNSUyNnNyY2hDb2x1bW4lM0RhZGRJdGVtMDElMjY%3D\', \'_blank\')"></p><span class="time">currentTime()</span></div></div>')
+</script>
+
+
+
 
 	<!-- test -->
 

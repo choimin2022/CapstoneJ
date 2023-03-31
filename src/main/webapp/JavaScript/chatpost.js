@@ -11,8 +11,8 @@ function sendMessage(messages) {
         var response = xhr.responseText;
         if (response) {
           response = JSON.parse(response);
-          // displayMessage로 서버의 응답을 채팅창에 표시
-          displayMessage(response.message);
+          // FMessage로 서버의 응답을 채팅창에 표시
+          FMessage(response.message);
         }
       } else {
         // 서버의 오류 응답 처리
@@ -22,6 +22,25 @@ function sendMessage(messages) {
     }
   };
   xhr.send(JSON.stringify({ message: message }));  
+}
+
+
+// 파일을 채팅창에 출력한다
+function FMessage(message) {
+  message.replace(/(\r\n|\n|\r)/gm, "");
+  var file = message;
+  var tar = $(".chat_wrap .inner").append(file);
+  var lastItem = $(".chat_wrap .inner").find(".item:last");
+  setTimeout(function() {
+    lastItem. addClass("on");
+  }, 10);
+
+  var position = lastItem.position().top + $(".chat_wrap .inner").scrollTop();
+  console. log(position);
+
+  $(".chat_wrap .inner").stop().animate({
+    scrollTop: position
+  }, 500);
 }
 
 
