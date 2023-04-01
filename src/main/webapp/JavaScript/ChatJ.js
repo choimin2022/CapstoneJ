@@ -5,14 +5,11 @@ $(function() {
       var _val = $(this).val();
       var _class = $(this).attr("class");
       $(this).val('');
+      sendMessage(_val)
       var _tar = $(".chat_wrap .inner").append('<div class="item '+_class+'"><div class="box"><p class="msg">' + _val + '</p><span class="time">' + currentTime() + '</span></div></div>');
       var lastItem = $(".chat_wrap .inner").find(".item:last");
       setTimeout(function() {
-        lastItem.addClass("on");
-        sendMessage(_val) //post로 보내는 함수 오른쪽은 예시 채팅 코드 */ 
-       /*setTimeout(function() {
-          displayMessage("안녕하세요 영진전문대학교 챗봇입니다 무엇을 도와드릴까요?", "https://www.naver.com/", "네이버");
-        }, 700); /* 답변 메시지 숫자는 딜레이  */
+        lastItem.addClass("on");    
       });
 
       var position = lastItem.position().top + $(".chat_wrap .inner").scrollTop();
@@ -24,8 +21,38 @@ $(function() {
   });
 });
 
+
+// 버튼 클릭시 채팅바에 버튼 정보가 올라가고 자동으로 엔터가 쳐져서 정보 호출
+     
+$(function() {  
+  $(".chat_wrap .inner").on("click", ".sendButton", function() {
+    console.log('클릭');
+    var _var = $(this).val(); // get the value of the clicked button
+    var _class = $(this).attr("class"); // get the class of the clicked button
+    sendMessage(_var); // call your sendMessage function with the button value as an argument
+    var _tar = $(".chat_wrap .inner").append('<div class="item mymsg"><div class="box"><p class="msg">' + _var + '</p><span class="time">' + currentTime() + '</span></div></div>');
+    var lastItem = $(".chat_wrap .inner").find(".item:last");
+    setTimeout(function() {
+      lastItem.addClass("on");
+    });
+
+    var position = lastItem.position().top + $(".chat_wrap .inner").scrollTop();
+    console.log(position);
+    $(".chat_wrap .inner").stop().animate({
+      scrollTop: position
+    }, 500);
+  });
+});
+
+
+
+
+
+
+
+
 //챗봇 측 대답을 하는 함수 + url + 버튼, 메시지만 입력시 메시지만 나타남
-function displayMessage(message, siteAddress, buttonName) {
+  function displayMessage(message, siteAddress, buttonName) {
   var _class = "yourmsg";
   var _val = message;
   var buttonHtml = '';

@@ -34,19 +34,10 @@
 <script src= "../JavaScript/chatpost.js"></script>
 
 <script>
-function addButton(num) {
-	    var xmlhttp = new XMLHttpRequest();
-	    xmlhttp.onreadystatechange = function() {
-	        if (this.readyState == 4 && this.status == 200) {
-	            var responseText = this.responseText;
-	            var msg = document.querySelector(".item");
-	            msg.innerHTML += responseText;
-	        }
-	    };
-	    xmlhttp.open("GET", "ButtonAction.jsp?num=" + num, true);
-	    xmlhttp.send();
-	}
-</script>
+    function addButton(count) {}   
+  </script>
+
+
 <!-- -------------------------------------------------------------------- -->
 
 
@@ -103,24 +94,6 @@ function addButton(num) {
 
 		<div class="chat_wrap">
 			<div class="inner">
-
-
-
-
-				<!-- 채팅창이 들어갈 곳과 버튼이 들어갈 곳-->
-				<!-- <div class="item">
-        <div class="box">
-            <p class="msg">안녕하세요</p>
-            <span class="time">오전 10:05</span>
-        </div>
-    </div>
-
-    <div class="item mymsg">
-        <div class="box">
-            <p class="msg">안녕하세요</p>
-            <span class="time">오전 10:05</span>
-        </div>
-    </div> -->
 				<div class="item yourmsg on">
 					<img class="tiger_chat" alt="image" src="img/character_main5.png">
 					<div class="box">
@@ -140,8 +113,8 @@ function addButton(num) {
                 web_url = rs2.getString("web_url");
                 con_link = rs.getString("con_link");
             %>
-                     <input type="button" name="<%=count%>" value="<%=web_name%>"
-                        onclick="addButton(<%=count%>)" /><br>
+                   <input type="button" name="<%=count%>" value="<%=web_name%>"
+    class="sendButton" id="sendButton" onclick="addButton(<%=count%>)" /><br>
                      <%
                 count++;
             }
@@ -172,15 +145,7 @@ function addButton(num) {
 
 
 	</div>
- <script>
- displayMessage("테스트 입니다.ss 컴퓨터 정보 계열 챗봇에 오신 것을 환영합니다! 컴퓨터 정보 계열은 4개의 과로 이뤄져 있으며, 매년 80% 이상 최고의 취업률을 보이고 있습니다. 계열 안내 및 계열부장 인사말을 보시려면 아래 메뉴를 클릭해주세요", "https://com.yju.ac.kr/index.php?mid=page_OXGJ16", "계열안내");
- </script>
-<script>
-Fmessage('<div class="item yourmsg on"><img class="tiger_chat" alt="image" src="img/character_main5.png"><div class="box"><p class="msg">영진전문대학교 일자리플러스센터에서 운영하는 취업 정보센터에 오신 것을 환영합니다! 저희 취업 정보 센터에서는 채용정보와 심리검사, 지원서 작성방법들과 창업 지원과 경력 개발 시스템을 제공하고 있습니다. 취업 정보 및 센터에서 제공하는 다양한 정보를 얻고 싶으시다면 아래 메뉴를 클릭해주세요.<br><input type="button" name="b0" value="우수취업자인터뷰" onclick="window.open(\'https://ipsi.yju.ac.kr/ipsi/164/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaXBzaSUyRjg5JTJGYXJ0Y2xMaXN0LmRvJTNGaXNWaWV3TWluZSUzRGZhbHNlJTI2YmJzQ2xTZXElM0QlMjZzcmNoV3JkJTNEJTI2YmJzT3BlbldyZFNlcSUzRDExNSUyNnNyY2hDb2x1bW4lM0RhZGRJdGVtMDElMjY%3D\', \'_blank\')"></p><span class="time">currentTime()</span></div></div>')
-</script>
-<script>
-Fmessage2('일본IT과는 일본 IT기업 맞춤형 AI Big DaTa, 클라우드 시스템, 네트워크/보안등의 신기술을 활용할 수 있는 인재, 기획한 IT 서비스를 설계 및 개발을 할 수 있는 인재, 일본 원어민과 비즈니스 업무를 진행할 수 있는 일본어 능력을 갖춘 글로벌 인재를 양성하기 위한 학과로 14년간 총 419명, 8년 연속 100% 취업의 쾌거를 이룩했습니다. 학과의 자세한 정보를 보고 싶으시다면 아래 메뉴를 클릭해주세요.<br><input type="button" name="b0" value="일본IT과" onclick="window.open(\'https://com.yju.ac.kr/index.php?mid=page_vhPi70\', \'_blank\')">')
-</script>
+
 
 
 
