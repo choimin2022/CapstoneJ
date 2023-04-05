@@ -61,3 +61,8 @@ h1 {
 fonts {
   font-size: 16px;
 }
+
+/* 브라우저 창 크기가 350px이하가 되면 h1의 글자 크기를 줄여서 글자가 넘치는 것을 방지함 */
+@media screen and (max-height : 350px){
+	h1{font-size: 10px;}
+}
