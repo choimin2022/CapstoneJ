@@ -72,9 +72,9 @@ public class ChatbotServer extends HttpServlet {
       catch (SQLException | JSONException e) {
     	  System.out.println("에러 발생: " + e.getMessage());
       }
-      if (conLink == null) {
+       if (conLink == null) {
     	    // 데이터베이스 테이블이 비었을때 오류처리
-    	    Map<String, String> responseData = new HashMap<>();
+    	/*    Map<String, String> responseData = new HashMap<>();
     	      responseData.put("fileContents", "내가 모르는거 묻지마");
     	      JSONObject jsonResponse = new JSONObject(responseData);
     	      System.out.println("오류을 json으로 보낼 준비");
@@ -97,7 +97,7 @@ public class ChatbotServer extends HttpServlet {
     	              out.close();
     	              System.out.println("클라이언트로 오류 전달 완료!");
     	          }
-    	      }
+    	      }  */
       }
     	 else {
     	    // Fetch the contents of the div file using con_link
@@ -112,7 +112,7 @@ public class ChatbotServer extends HttpServlet {
 				e1.printStackTrace();
 			}
 			
-    	    // return the result
+    	    // 결과 반환
     	    Map<String, String> responseData = new HashMap<>();
   	      responseData.put("fileContents", fileContents);
   	      JSONObject jsonResponse = new JSONObject(responseData);
@@ -174,3 +174,6 @@ private String fetchFileContents(String conLink) throws Exception {
 	    System.out.println("파일 내용 저장 완료");
 	    return sb.toString();
 	}*/
+
+
+

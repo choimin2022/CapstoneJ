@@ -4,8 +4,7 @@ $(function() {
     if (e.keyCode == 13 && $(this).val().length) {
       var _val = $(this).val();
       var _class = $(this).attr("class");
-      $(this).val('');
-      sendMessage(_val)
+      $(this).val('');    
       var _tar = $(".chat_wrap .inner").append('<div class="item '+_class+'"><div class="box"><p class="msg">' + _val + '</p><span class="time">' + currentTime() + '</span></div></div>');
       var lastItem = $(".chat_wrap .inner").find(".item:last");
       setTimeout(function() {
@@ -16,7 +15,8 @@ $(function() {
       console.log(position);
       $(".chat_wrap .inner").stop().animate({
         scrollTop: position
-      }, 500);
+      }, 500);  
+      sendMessage(_val)      
     }
   });
 });

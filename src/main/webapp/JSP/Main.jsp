@@ -32,10 +32,11 @@
 
 <script src="../JavaScript/ChatJ.js"></script>
 <script src= "../JavaScript/chatpost.js"></script>
+<script src="../JavaScript/gpt.js"></script>
 
-<script>
+<!--  <script>
     function addButton(count) {}   
-  </script>
+  </script>  -->
 
 
 <!-- -------------------------------------------------------------------- -->
@@ -101,7 +102,7 @@
 						<p class="msg">
 							               <%
             Connection conn2 = webDAO.MySQLDBConnection();
-            String webList = "select n.*, c.con_link from web_name n left join web_con c on n.web_code = c.web_code";
+            String webList = "select * from web_name";
 
             PreparedStatement pstmt2 = conn2.prepareStatement(webList);
             ResultSet rs2 = pstmt2.executeQuery();
@@ -111,14 +112,25 @@
                 web_code = rs2.getString("web_code");
                 web_name = rs2.getString("web_name");
                 web_url = rs2.getString("web_url");
-                con_link = rs.getString("con_link");
-            %>
-                   <input type="button" name="<%=count%>" value="<%=web_name%>"
-    class="sendButton" id="sendButton" onclick="addButton(<%=count%>)" /><br>
+                
+            %><div id="menu">
+            		<button type="button" class="sendButton" id="sendButton" value="<%=web_name%>">><img src="img/우수취업자.gif" alt=""><%=web_name%></button>         		
+                  <!--   <input type="button" name="<%=web_code%>" class="sendButton" id="sendButton" value="<%=web_name%>">          -->                  
                      <%
-                count++;
-            }
+                     if(count %3 ==0){
+                
+        
+       
             %>
+            <br>
+            <%
+            
+                     }
+                     count++;
+            }
+            
+            %></div>
+
             
 						</p><span class="time">currentTime()</span>
 
