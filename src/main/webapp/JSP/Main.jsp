@@ -113,8 +113,8 @@
                 web_name = rs2.getString("web_name");
                 web_url = rs2.getString("web_url");
                 
-            %><div id="menu">
-            		<button type="button" class="sendButton" id="sendButton" value="<%=web_name%>">><img src="img/우수취업자.gif" alt=""><%=web_name%></button>         		
+            %>
+            		<button type="button" class="sendButton" id="sendButton" value="<%=web_name%>"><img src="img/우수취업자.gif" alt=""><%=web_name%></button>         		
                   <!--   <input type="button" name="<%=web_code%>" class="sendButton" id="sendButton" value="<%=web_name%>">          -->                  
                      <%
                      if(count %3 ==0){
@@ -129,7 +129,7 @@
                      count++;
             }
             
-            %></div>
+            %>
 
             
 						</p><span class="time">currentTime()</span>
