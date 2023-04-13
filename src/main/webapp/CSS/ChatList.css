@@ -1,0 +1,44 @@
+ /* 입력란과 자동완성 목록을 포함하는 부모 요소에 position: relative 속성을 추가합니다. */
+  .container {
+         position: relative;
+      }
+
+      /* 자동완성 목록의 스타일을 변경합니다. */
+      #searchOptions {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         border: 1px solid gray;
+
+         /* position: absolute 속성을 추가하고 top 속성을 -100%로 설정합니다. */
+         position: absolute;
+         top: -150%;
+         left: 0; /* 화면 좌측 끝부터 시작하도록 left 속성을 추가합니다. */
+         width: 100%; /* 입력창의 너비와 동일하게 설정합니다. */
+         height: 85px; /* 자동완성 목록의 높이를 200px로 고정합니다. */
+         overflow-y: auto; /* 자동 스크롤 기능을 활성화합니다. */
+      }
+
+      #searchOptions li {
+         padding: 15px; /* 크기를 10px로 늘립니다. */
+         cursor: pointer;
+      }
+
+      #searchOptions li strong {
+         font-weight: bold; /* strong 태그에 대해 굵은 글씨로 설정합니다. */
+      }
+
+      #searchOptions {
+         background-color: Gainsboro;
+      }
+
+      /* 자동완성 목록을 끄고 킬 수 있는 버튼에 대한 스타일을 추가합니다. */
+      #toggleBtn {
+         position: absolute;
+         right: 0;
+         top: 0;
+         width: 55x;
+         height: 20px;
+         background-color: Gainsboro;
+         cursor: pointer;
+      }

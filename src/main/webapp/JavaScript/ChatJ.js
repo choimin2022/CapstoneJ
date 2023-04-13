@@ -16,7 +16,7 @@ $(function() {
       $(".chat_wrap .inner").stop().animate({
         scrollTop: position
       }, 500);  
-      sendMessage(_val)      
+      sendMessage(_val)          
     }
   });
 });
@@ -26,10 +26,9 @@ $(function() {
      
 $(function() {  
   $(".chat_wrap .inner").on("click", ".sendButton", function() {
-    console.log('클릭');
-    var _var = $(this).val(); // get the value of the clicked button
-    var _class = $(this).attr("class"); // get the class of the clicked button
-    sendMessage(_var); // call your sendMessage function with the button value as an argument
+    console.log('클릭');    
+    var _var = $(this).text(); // 버튼 사이에 있는 텍스트를 저장함
+    sendMessage(_var); 
     var _tar = $(".chat_wrap .inner").append('<div class="item mymsg"><div class="box"><p class="msg">' + _var + '</p><span class="time">' + currentTime() + '</span></div></div>');
     var lastItem = $(".chat_wrap .inner").find(".item:last");
     setTimeout(function() {
@@ -43,6 +42,11 @@ $(function() {
     }, 500);
   });
 });
+
+function getValue() {
+  var buttonValue = event.target.innerHTML;
+  console.log(buttonValue);
+}
 
 
 
@@ -104,4 +108,5 @@ var currentTime = function() {
 	  var time = currentTime();
 	  timeElements.text(time);
 	});
+
 

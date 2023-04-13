@@ -57,7 +57,7 @@ public class ChatbotServer extends HttpServlet {
         String conLink = null;
         try {
         	Connection conn = webDAO.MySQLDBConnection();        	       	
-        	PreparedStatement statement = conn.prepareStatement("select n.*, c.* from web_name n left join web_con c on n.web_code = c.web_code where n.web_name = ?");
+        	PreparedStatement statement = conn.prepareStatement("select n.*, c.* from web_name n left join web_con c on n.web_code = c.web_code where n.web_name= ?");
         	statement.setString(1, searchWord);
         	ResultSet resultSet = statement.executeQuery();
         	if (resultSet.next()) {
