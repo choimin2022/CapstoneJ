@@ -42,13 +42,12 @@ $(function() {
 
   options.addEventListener('click', function(event) {
     const target = event.target;
-
+    console.log(target);
     if (target.tagName === 'LI') {
       const selectedValue = target.textContent;
-      input.value = selectedValue; // 입력창에 해당 정보 삽입
-      const liElement = document.querySelector('li');
-      const _var = liElement.getAttribute('value')
-       var _tar = $(".chat_wrap .inner").append('<div class="item mymsg"><div class="box"><p class="msg">' + input.value + '</p><span class="time">' + currentTime() + '</span></div></div>');
+      const _var = target.getAttribute('value')
+      
+       var _tar = $(".chat_wrap .inner").append('<div class="item mymsg"><div class="box"><p class="msg">' + selectedValue + '</p><span class="time">' + currentTime() + '</span></div></div>');
     	var lastItem = $(".chat_wrap .inner").find(".item:last");
     	setTimeout(function() {
       	lastItem.addClass("on");
@@ -61,12 +60,13 @@ $(function() {
  		   }, 500); 		   		   
    	  sendMessage(_var); 
       options.style.display = 'none';
-      setTimeout(() => input.focus(), 100);  // Set focus after a 0.1-second delay
+      setTimeout(() => input.focus(), 100);  
       input.value = '';
        
     }
   });
-
+  
+  
   function createToggleButton() {
     if (!isButtonCreated) {
       toggleBtn = document.createElement('button');
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const deltaX = mouseMoveX - mouseDownX;
     mouseDownX = undefined;
 
-    if (deltaX < -700) { 
+    if (deltaX < -500) { 
       menuButtons.forEach(button => {
         if (button.classList.contains("hidden")) {
           button.classList.remove("hidden");
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const deltaX = mouseMoveX - mouseDownX;
       mouseDownX = undefined;
 
-      if (deltaX > 700) { 
+      if (deltaX > 500) { 
         menuButtons.forEach(button => {
           if (button.classList.contains("hidden")) {
             button.classList.remove("hidden");

@@ -12,6 +12,8 @@
 <!-- web_name 필드 -->
 
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,15 +54,15 @@
 	String filePath;
 	request.setCharacterEncoding("UTF-8");
 
-	//---------------------------------------------------------------
+	//---------------------------------------------------------------웹주소
 	String web_code = request.getParameter("web_code");
 	String web_name = request.getParameter("web_name");
 	;
 	String web_url = request.getParameter("web_url");
 	;
-	//----------------------------------------
+	//----------------------------------------채팅
 	String con_link = request.getParameter("con_link");
-
+	
 
 	//------------------------------------------
 	//getParameter은 String방식으로 들고오기 때문에 int형으로 변형해줘야 된다.	
@@ -99,24 +101,26 @@
 		      <img class="tiger_chat" alt="image" src="img/character_main5.png">
 		      <div class="box">
 		        <div class="msg" id="menu">		      
-		        <img class="tiger_menu" alt="image" src="img/character_top2.png">
 		        	<h2 class="inmsg"> 
+		        	 <img class="tiger_menu" alt="image" src="img/character_top2.png">
 		        		&nbsp;&nbsp;안녕하세요 영진전문대학교 컴퓨터정보계열 챗봇 와이거에요!<br>
 		        		&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을 질문해주시면 <br>&nbsp;&nbsp;안내해드릴게요!</h2>	        
 		        <p class="menu">
-		          <% Connection conn2 = webDAO.MySQLDBConnection(); String webList = "select * from web_name"; 
-		        PreparedStatement pstmt2 = conn2.prepareStatement(webList); ResultSet rs2 = pstmt2.executeQuery(); 
+		          <% Connection conn2 = webDAO.MySQLDBConnection(); 
+		          String webList = "select * from web_name"; 
+		        PreparedStatement pstmt2 = conn2.prepareStatement(webList);
+		        ResultSet rs2 = pstmt2.executeQuery(); 
 		        int count = 1;
 		        %>        
 		            <% while (rs2.next()) {
 		            web_code = rs2.getString("web_code"); web_name = rs2.getString("web_name"); web_url = rs2.getString("web_url"); 
 		            if(count <= 9) { %>		            
 		            <button type="button" class="sendButton" id="sendButton<%=count%>" value="<%=web_code%>">
-		              <img class="imgsize" src="img/우수취업자.gif"><%=web_name%>
+		              <img class="imgsize" src="img/<%=web_name%>.gif"><%=web_name%>
 		            </button>
 		            <% } else { %>
 		            <button type="button" class="sendButton hidden" id="sendButton<%=count%>" value="<%=web_code%>">
-		              <img class="imgsize" src="img/우수취업자.gif"><%=web_name%>
+		              <img class="imgsize" src="img/<%=web_name%>.gif"><%=web_name%>
 		            </button>
 		            <% } count++; } %>          
 		             </p>  
@@ -137,11 +141,11 @@
 		<div class="chat-container">
          <input type="text" class="mymsg" placeholder="궁금한 것을 알려주세요">
     <ul id="searchOptions">
+      <li value="학사공지">학사 공지 궁금해요</li>       
+      <li value="">휴/복학문의 알려주세요</li>      
       <li value="계열안내">계열소개를 해주세요</li>
-      <li value="">휴/복학문의 알려주세요</li>
       <li value="">입학 문의 알고 싶어요</li>
       <li value="">성적 조회를 하고 싶어요</li>
-      <li value="학사공지">학사 공지 궁금해요</li>            
       </ul>
       </div>
 			<!-- <input type="text" class="yourmsg" placeholder="내용 입력"> -->
