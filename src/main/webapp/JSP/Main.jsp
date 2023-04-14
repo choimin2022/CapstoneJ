@@ -30,11 +30,13 @@
 <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 <link rel="stylesheet" type="text/css" href="../CSS/chatForm.css">
 <link rel="stylesheet" type="text/css" href="../CSS/ChatList.css">
+<link rel="stylesheet" type="text/css" href="../CSS/NewBoard.css">
 
 <script src="../JavaScript/ChatJ.js"></script>
 <script src= "../JavaScript/chatpost.js"></script>
 <script src="../JavaScript/gpt.js"></script>
 <script src="../JavaScript/ChatList.js"></script>
+<script src="../JavaScript/ChatMenu.js"></script>
 
 <!--  <script>
     function addButton(count) {}   
@@ -87,7 +89,6 @@
 
 	<div id="root">
 		<div id="top">
-
 			<!--상단바-->
 			<img class="tiger" alt="image" src="img/character_top2.png">
 			<h1>와이거(Wyiger for comjeong)</h1>
@@ -101,10 +102,13 @@
 		      <img class="tiger_chat" alt="image" src="img/character_main5.png">
 		      <div class="box">
 		        <div class="msg" id="menu">		      
-		        	<h2 class="inmsg"> 
+		        	<div class="inmsg"> 
 		        	 <img class="tiger_menu" alt="image" src="img/character_top2.png">
+		        	 	<div>
 		        		&nbsp;&nbsp;안녕하세요 영진전문대학교 컴퓨터정보계열 챗봇 와이거에요!<br>
-		        		&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을 질문해주시면 <br>&nbsp;&nbsp;안내해드릴게요!</h2>	        
+		        		&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을 질문해주시면 <br>&nbsp;&nbsp;안내해드릴게요!
+		        		</div>
+		        	</div>	        
 		        <p class="menu">
 		          <% Connection conn2 = webDAO.MySQLDBConnection(); 
 		          String webList = "select * from web_name"; 
@@ -124,7 +128,12 @@
 		            </button>
 		            <% } count++; } %>          
 		             </p>  
-		               <button type="button" id="More" class="image-button">다음 메뉴 </button>	         
+		             <div class="undermenu">
+		               <button type="button" id="More" class="image-button">다음 메뉴 </button>
+		               <button class="board">컴정 New</button>	
+		               <button class="board">로그인</button>	
+		               <button class="board">회원가입</button>	  
+		             </div>         
 		         </div>		  		              		 
 		        <span class="time">currentTime()</span>			     	       			
 		      </div>
@@ -139,6 +148,7 @@
 
 
 		<div class="chat-container">
+		 <button class="board">TOP</button>	  
          <input type="text" class="mymsg" placeholder="궁금한 것을 알려주세요">
     <ul id="searchOptions">
       <li value="학사공지">학사 공지 궁금해요</li>       
@@ -146,6 +156,7 @@
       <li value="계열안내">계열소개를 해주세요</li>
       <li value="">입학 문의 알고 싶어요</li>
       <li value="">성적 조회를 하고 싶어요</li>
+      <li value="교수진소개">교수님을 알고 싶어요</li>
       </ul>
       </div>
 			<!-- <input type="text" class="yourmsg" placeholder="내용 입력"> -->

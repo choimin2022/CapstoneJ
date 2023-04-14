@@ -42,7 +42,6 @@ $(function() {
 
   options.addEventListener('click', function(event) {
     const target = event.target;
-    console.log(target);
     if (target.tagName === 'LI') {
       const selectedValue = target.textContent;
       const _var = target.getAttribute('value')
