@@ -108,5 +108,50 @@ var currentTime = function() {
 	  var time = currentTime();
 	  timeElements.text(time);
 	});
+	
+	//상단 스크롤 기능
 
+document.addEventListener('DOMContentLoaded', () => {
+
+$("#topButton").hide();
+
+$(".chat_wrap .inner").scroll(function() {
+  if ($(this).scrollTop() == 0) {
+    $("#topButton").hide();
+  } else {
+    $("#topButton").show();
+  }
+});
+
+$("#topButton").click(function() {
+  $(".chat_wrap .inner").scrollTop(0);
+  $("#topButton").hide();
+});
+
+});
+
+//
+
+// 메뉴 동적 변환
+function loadJsp(jspName) {
+  console.log("loadJsp 호출됨"); 
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("changebox").innerHTML = this.responseText;
+      if(jspName=='menu/menu.jsp' || 'menu/board.jsp'){
+      applyMenuJavaScript(); // JSP가 로드되면 자바스크립트 함수 적용
+      }
+    }
+  };
+  xmlhttp.open("GET", jspName, true);
+  xmlhttp.send();
+ 
+  $(".chat_wrap .inner").scrollTop(0); // 클릭시 맨 위로 올라감
+  $("#topButton").hide();
+}
+
+window.onload = function() {
+  loadJsp("menu/menu.jsp");
+}
 

@@ -1,4 +1,4 @@
-function gpt(message){   //온도 0 이면 계속 색다른 대답 온도 변경
+/*function gpt(message){   //온도 0 이면 계속 색다른 대답 온도 변경
 	
 const model = 'text-davinci-003'	
 const headers = {
@@ -31,4 +31,4 @@ fetch("https://api.openai.com/v1/engines/"+ model +"/completions", {
 });
 }
   
- 
+ */
