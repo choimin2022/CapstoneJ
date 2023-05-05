@@ -28,11 +28,14 @@
 </head>
 <body>
 
-					 <div class="loginmenu">
-			        	<div class="loginTop">로그인</div>			
-	        
-			            
-		             </div>
+			 <div class="loginmenu">
+			   	<div class="loginTop">로그인</div>
+			   	<div class="loginBody">	
+				   	  <input  class="id" placeholder="아이디"/><br>
+				   	  <input type='password' class="pass" placeholder="비밀번호"/>
+				   	  <input type="button" class="Blogin" value="로그인"/>
+	        	</div>			         
+		     </div>
 		                      
 <script src="/CapStonWeb/JavaScript/login.js"></script>
 </body>

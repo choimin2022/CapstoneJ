@@ -1,8 +1,14 @@
 .signupmenu{
-	  background:#a6c9d0;
+	  background:#ffffff;
 	  width: 100%;
 }
 
 .signupTop{
+	text-align: center;
+	background:#f29292;
+}
+
+.signupBody{
+	height: 600px;
 	width: 1029px;
 }

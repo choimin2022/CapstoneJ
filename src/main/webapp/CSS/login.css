@@ -3,5 +3,52 @@
 }
 
 .loginTop{
-	width: 1029px;
+	text-align: center;
+	background:#f29292;
+}
+
+.loginBody{
+	background:#f0f0c6;
+    text-align: center;
+}
+
+
+
+
+
+.id{
+	margin-top: 10px;
+	left:15%;
+	width: 60%;
+	border: 0;
+    background: #fff;
+    border-radius: 0px;
+    height: 35px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    transform: translateX(-50%);
+}
+.pass{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	left:30%;
+	width: 60%;
+	border: 0;
+    background: #fff;
+    border-radius: 0px;
+    height: 35px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.Blogin{
+  float:right;
+  margin-right:20px;
+  cursor: pointer;
+}
+
+.loginbox{
 }

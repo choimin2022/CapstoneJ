@@ -58,34 +58,41 @@
 		  </div>
 		</div>
 
-
-
-
-
-<button class="top" id="topButton">TOP</button>	  
+		<button class="top" id="topButton">TOP</button>
 		<div class="chat-container">
-         <input type="text" class="mymsg" placeholder="궁금한 것을 알려주세요">
-    <ul id="searchOptions">
-      <li value="학사공지">학사 공지 궁금해요</li>       
-      <li value="">휴/복학문의 알려주세요</li>      
-      <li value="계열안내">계열소개를 해주세요</li>
-      <li value="">입학 문의 알고 싶어요</li>
-      <li value="">성적 조회를 하고 싶어요</li>
-      <li value="교수진소개">교수님을 알고 싶어요</li>
-      </ul>
+        <input type="text" class="mymsg" placeholder="궁금한 것을 알려주세요" autocomplete="off"/>
+         <button class="dictate">
+            <i class="ic-mike"></i>
+            <svg width="1.25rem" height="1.25rem" viewBox="0 0 100 100">
+                <g stroke="#fff" stroke-width="15">
+                    <path d="M20,20 20,80">
+                        <animate attributeName="d" values="M20,40 20,60;M20,20 20,80;M20,40 20,60" dur="1s" repeatCount="indefinite" />
+                    </path>
+                    <path d="M50,10 50,90">
+                        <animate attributeName="d" values="M50,10 50,90;M50,40 50,60;M50,10 50,90" dur="1s" repeatCount="indefinite" />
+                    </path>
+                    <path d="M80,20 80,80">
+                        <animate attributeName="d" values="M80,40 80,60;M80,20 80,80;M80,40 80,60" dur="1s" repeatCount="indefinite" />
+                    </path>
+                </g>
+            </svg>
+        </button>
+		    <ul id="searchOptions">
+		      <li value="학사공지">학사 공지 궁금해요</li>       
+		      <li value="">휴/복학문의 알려주세요</li>      
+		      <li value="계열안내">계열소개를 해주세요</li>
+		      <li value="">입학 문의 알고 싶어요</li>
+		      <li value="">성적 조회를 하고 싶어요</li>
+		      <li value="교수진소개">교수님을 알고 싶어요</li>
+		     </ul>
       </div>
+      
 			<!-- <input type="text" class="yourmsg" placeholder="내용 입력"> -->
 		</div>
 
 		<!-- CSS문제점 채팅이 나오면 아랫쪽에 새로운 div가 생성되며 화면이 다 보였을 시 overflow로 인해 스크롤바가 생격야 됨 그런데 아래에 생성이 되는게 아닌 중앙정렬이 됨 -->
 
-
 	</div>
-
-
-
-
-
 
 	<!-- test -->
 
@@ -101,5 +108,7 @@
 <script src="/CapStonWeb/JavaScript/gpt.js"></script>
 <script src="/CapStonWeb/JavaScript/ChatList.js"></script>
 <script src="/CapStonWeb/JavaScript/Menu.js"></script>
+<script src="/CapStonWeb/JavaScript/login.js"></script>
+<script src="/CapStonWeb/JavaScript/addMic.js"></script>
 </body>
 </html>

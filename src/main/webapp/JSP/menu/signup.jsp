@@ -28,10 +28,15 @@
 </head>
 <body>
 			 <div class="signupmenu">
-				<div class="signupTop">회원가입</div>				        	        
-
-	 	       
-			            
+				<div class="signupTop">회원가입</div>			
+			<div class="signupBody">
+		 
+			
+			
+			
+			
+			
+			</div>
 	        </div>
 		                      
 <script src="/CapStonWeb/JavaScript/signup.js"></script>

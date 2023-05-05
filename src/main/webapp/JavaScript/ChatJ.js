@@ -139,8 +139,11 @@ function loadJsp(jspName) {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("changebox").innerHTML = this.responseText;
-      if(jspName=='menu/menu.jsp' || 'menu/board.jsp'){
+      if(jspName=='menu/menu.jsp'){
       applyMenuJavaScript(); // JSP가 로드되면 자바스크립트 함수 적용
+      }
+      if(jspName=='menu/login.jsp'){
+      applyLoginJavaScript();
       }
     }
   };

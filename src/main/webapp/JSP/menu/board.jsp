@@ -25,29 +25,21 @@
 	crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="/CapStonWeb/CSS/board.css">
-<link rel="stylesheet" type="text/css" href="/CapStonWeb/CSS/menu.css">
 </head>
 <body>
 		<div class="boardmenu">
-			<div class="boardTop">컴퓨터정보계열 새소식</div>			
-			<div>내용
+			<div class="boardTop">2023 컴퓨터정보계열 새소식</div>			
+			<div class="boardBody">
+			1. 본관 3층 휴계공간 생김 <br>
+			2. 컴정 과잠 
 			
 			
 			
 			
 			
-			
-			</div>	 
-				
-			<div class="buttonP">
-			    <ul>
-			  	<li id="pageOne"></li>
-			  	<li id="pageTwo"></li>
-			    </ul>
-		    </div>	            
+			</div>	             
 		 </div>
 		                      
 <script src="/CapStonWeb/JavaScript/board.js"></script>
-<script src="/CapStonWeb/JavaScript/menu.js"></script>
 </body>
 </html>

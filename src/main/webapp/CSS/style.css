@@ -3,6 +3,7 @@
         margin: 0;
         overflow-x: hidden;
         background-color: #999999;
+        overflow-y: hidden;
       }
 textarea {
 	width: 90%;
@@ -68,6 +69,21 @@ fonts {
 @media screen and (max-height : 350px){
 	h1{font-size: 10px;}
 }
+
+.dictate {
+    float: right;
+    background: #ffffff url(/CapStonWeb/JSP/img/icon-microphone.jpg) no-repeat center;
+    background-position: center;
+    background-size: AUTO;
+    width:40px;
+    height:30px;
+}
+
+
+.dictate.on {background: #000;}
+.dictate.on svg {display: block; margin: auto;}
+.dictate.on .ic-mike {display: none;}
+.dictate svg {display: none;}
 
 
 
