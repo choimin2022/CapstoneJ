@@ -15,8 +15,8 @@ textarea {
   transform: translate(-5%, -2%);
 }
 	.tiger_chat{
-	width: 35px;
-	height: 35px;
+	width: 45px;
+	height: 45px;
 	float: left;
 	padding-right: 10px;	
 	}
@@ -24,7 +24,7 @@ textarea {
 
 	
 #top {
-	background-color:#005df0;
+	background-color:#4c6c73;
 	text-align: center;
 	height: 7vh; width : 100%;
 	display: flex;
