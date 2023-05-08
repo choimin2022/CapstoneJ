@@ -1,0 +1,1 @@
+AI클라우드프로그래밍과는 4차 산업혁명 시대의 소프트웨어 개발자의 양성과 네트워크/서버 등 시스템 분야 전문 기술인재를 양성하는 학과입니다. 자세한 학과 소개를 보고 싶으시다면 아래 메뉴를 클릭해주세요.<br><input type="button" class="bmsg" name="b0" value="AI클아우드프로그래밍과" onclick="window.open('https://com.yju.ac.kr/index.php?mid=page_GvQP63', '_blank')">  

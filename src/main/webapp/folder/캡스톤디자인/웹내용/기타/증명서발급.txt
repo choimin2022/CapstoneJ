@@ -1,0 +1,1 @@
+영진전문대학교 증명성 발급에 대해서 안내해드릴게요! 창구 발급 : 원스탑서비스센터(공학관 1층 101호) 소요시간 10분 이내, 증명서 무인발급기: 공학관 1층 Global Lounge에 설치된 증명서 무인발급기 이용(연중무휴 8:00 ~ 22:00) 인터넷 발급과 팩스 발급은 아래 메뉴를 클릭하시면 신청할 수 있어요!<br><input type="button" class="bmsg" name="b0" value="증명서발급" onclick="window.open('https://www.yju.ac.kr/kr/3255/subview.do', '_blank')">  

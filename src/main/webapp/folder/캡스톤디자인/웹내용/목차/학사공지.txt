@@ -1,0 +1,1 @@
+컴퓨터정보계열 2023년 학사 공지를 조회했습니다!아래 메뉴를 클릭하면 학사 공지 게시판으로 이동하실 수 있습니다.<br><input type="button" class="bmsg" name="b0" value="학사공지" onclick="window.open('https://com.yju.ac.kr/index.php?mid=board_NZIo01', '_blank')">  

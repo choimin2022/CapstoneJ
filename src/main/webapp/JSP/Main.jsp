@@ -42,9 +42,8 @@
 		      <img class="tiger_chat" alt="image" src="/CapStonWeb/JSP/img/character_main5.png">
 		      <div class="box">
 		        <div class="msg" id="">	
-		        	<div id="changebox">	  
-		        	
-		        	</div>  
+		        	<div id="changebox">	  		        	
+	      	</div>  
 		        	          		 
 		        	  <div class="undermenu">
 		              <button class="m" id="menu-button" onclick="loadJsp('menu/menu.jsp')">메뉴</button>

@@ -1,0 +1,1 @@
+컴퓨터 정보계열에 궁금한 점이나 전공, 과목에 대해 물어보고 싶은 것이 있다면 바로 여기 입시 Q&A 게시판에 물어보실 수 있어요. 질문이 있다면 아래 메뉴를 클릭해주세요!<br><input type="button" class="bmsg" name="b0" value="입시Q&A" onclick="window.open('https://com.yju.ac.kr/index.php?mid=board_SYll62', '_blank')">  

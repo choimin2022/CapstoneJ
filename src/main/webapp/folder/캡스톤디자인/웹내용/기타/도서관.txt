@@ -1,0 +1,1 @@
+미래를 여는 지혜 영진전문대 도서관을 찾아주셔서 감사합니다! 아래 메뉴를 클릭하여 도서관 홈페이지로 이동하시면 찾고 싶은 자료를 검색할 수 있고 다양한 도서관 서비스와 이벤트에 참여하실 수 있어요!<br><input type="button" class="bmsg" name="b0" value="도서관" onclick="window.open('https://lib.yju.ac.kr/WebYJC/Aspx/main/index.aspx', '_blank')">  

@@ -1,0 +1,1 @@
+AI·빅데이터응용소프트웨어과는 인공지능, 빅데이터 분야 소프트웨어 개발자의 양성과 웹/모바일/IoT 분야 응용 소프트웨어 개발자 양성을 목표로 한 학과입니다. AI·빅데이터응용소프트웨어과의 자세한 정보를 보고 싶으시다면 아래 메뉴를 클릭해주세요.<br><input type="button" class="bmsg" name="b0" value="AI응용빅데이터응용소프웨어과" onclick="window.open('https://com.yju.ac.kr/index.php?mid=page_VrJT47', '_blank')">

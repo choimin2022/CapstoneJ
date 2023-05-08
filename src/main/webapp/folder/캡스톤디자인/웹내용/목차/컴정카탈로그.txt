@@ -1,0 +1,1 @@
+컴퓨터 정보 계열에서 제공하는 계열 소개와 취업자 인터뷰를 총망라한 카탈로그를 불러왔어요! 아래 메뉴를 클릭하여 카탈로그를 보시고 꿈과 열정을 가지고 오세요!<br><input type="button" class="bmsg" name="b0" value="컴정카탈로그" onclick="window.open('https://com.yju.ac.kr/index.php?mid=page_xPby79', '_blank')">  
