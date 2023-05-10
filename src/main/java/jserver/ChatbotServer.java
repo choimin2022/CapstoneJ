@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -140,8 +141,12 @@ public class ChatbotServer extends HttpServlet {
   	  }      
     }
   private String fetchFileContents(String conLink) throws Exception {
-	    System.out.println("파일검색 함수로 들어옴");
-	    File file = new File(conLink);
+	    System.out.println("파일을 검색중");
+
+	   String path = getServletContext().getRealPath(conLink);
+	    File file = new File(path);
+	    System.out.println(path);
+
 	    BufferedReader in = new BufferedReader(new FileReader(file));
 	    String inputLine;
 	    StringBuilder sb = new StringBuilder();
@@ -149,13 +154,16 @@ public class ChatbotServer extends HttpServlet {
 	        sb.append(inputLine);
 	    }
 	    in.close();
-	    System.out.println("파일내용 저장 성공 함수 나감");
+	    System.out.println("파일 찾기 완료!");
 	    return sb.toString();
 	}
 
 
+
+
+
 }
-/* 파일 내용 저장 url 버전
+/*== 파일 내용 저장 url 버전
 private String fetchFileContents(String conLink) throws Exception {
 	    System.out.println("파일검색 함수로 들어옴");
 	    URL url = new URL(conLink);
