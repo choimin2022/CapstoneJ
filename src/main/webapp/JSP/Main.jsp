@@ -32,8 +32,42 @@
 			<!--상단바-->
 			<img class="tiger" alt="image" src="/CapStonWeb/JSP/img/character_top2.png">
 			<h1>와이거(Wyiger for comjeong)</h1>
+			<!--좌측 상단 메뉴-->
+			<div class="btn_unit">
+			<button type="button" class="">
+			<span class="">컴정 new</span>
+			</button>
+			<button type="button" class="">
+			<span class="">ai 상담</span>
+			</button>
+			<button type="button" class="menu_btn btn_menu">
+			<span class="ico_comm ico_menu">메뉴 보기</span>
+			</button>
+			</div>
+			<!--가운데 나타나는 박스(로그인, 회원가입)-->
+			<div class="dimmed" style="z-index: 100;"></div>
+			<div class="midbox" id="midbox"></div>
+			
 		</div>
-
+		    <!-- 아래 코드 우측 상단 메뉴-->
+			<div class="button_area">
+				<div class="profile_box">
+					<h2 class="sub_h_tit">영진 컴정 챗봇</h2>
+					<img class="chat_logo_box" alt="image" src="/CapStonWeb/JSP/img/Logo2.png">
+					<div>비회원님 환영합니다</div>
+				</div>  
+				<ul class="undermenu sub_menu_list">
+				<!--<li><button class="m" id="menu-button" onclick="loadJsp('menu/menu.jsp')">메뉴</button></li>-->
+				  <li class="sub_menu_item"><button class="m" id="login-button" onclick="loadmid('menu/login.jsp')">로그인</button></li>
+				  <li class="sub_menu_item"><button class="m" id="signup-button" onclick="loadmid('menu/signup.jsp')">회원가입</button></li>
+				<!-- <li class="sub_menu_item"><button class="m" id="board-button" onclick="('menu/board.jsp')">컴정 New</button></li>-->
+				</ul>
+				<button class="inquiry" id="" onclick="('menu/')">문의하기</button>
+				<button type="button" class="btn_close">
+					<span class="ico_comm ico_close">메뉴 레이어 닫기</span>
+				</button>
+			</div>
+		
 
 
 		<div class="chat_wrap">
@@ -41,25 +75,18 @@
 		    <div class="item yourmsg on">
 		      <img class="tiger_chat" alt="image" src="/CapStonWeb/JSP/img/character_main5.png">
 		      <div class="box">
-		        <div class="msg" id="">	
+		        <div class="msg menumsg" id="">	
 		        	<div id="changebox">	  		        	
-	      	</div>  
-		        	          		 
-		        	  <div class="undermenu">
-		              <button class="m" id="menu-button" onclick="loadJsp('menu/menu.jsp')">메뉴</button>
-			          <button class="m" id="board-button" onclick="loadJsp('menu/board.jsp')">컴정 New</button>
-					  <button class="m" id="login-button" onclick="loadJsp('menu/login.jsp')">로그인</button>
-					  <button class="m" id="signup-button" onclick="loadJsp('menu/signup.jsp')">회원가입</button>
-		             </div>      	   
+	      			</div>  	        	          		 		             	   
 		      </div>
-		      	<span class="time">currentTime()</span>		
+		      	<span class="time" id='menu_time'>currentTime()</span>		
 		    </div>
 		  </div>
 		</div>
 
-		<button class="top" id="topButton">TOP</button>
+		<button class="top top_icon" id="topButton">TOP</button>
 		<div class="chat-container">
-        <input type="text" class="mymsg" placeholder="궁금한 것을 알려주세요" autocomplete="off"/>
+        <input type="text" class="mymsg cinput" placeholder="궁금한 것을 알려주세요" autocomplete="off"/>
          <button class="dictate">
             <i class="ic-mike"></i>
             <svg width="1.25rem" height="1.25rem" viewBox="0 0 100 100">
@@ -108,6 +135,7 @@
 <script src="/CapStonWeb/JavaScript/ChatList.js"></script>
 <script src="/CapStonWeb/JavaScript/Menu.js"></script>
 <script src="/CapStonWeb/JavaScript/login.js"></script>
+<script src="/CapStonWeb/JavaScript/signup.js"></script>
 <script src="/CapStonWeb/JavaScript/addMic.js"></script>
 </body>
 </html>

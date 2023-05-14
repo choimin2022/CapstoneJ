@@ -50,6 +50,7 @@
    font-size: 15px;
    line-height: 1.3;
    letter-spacing: -0.4px;
+   box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
 }
 
 
@@ -76,6 +77,7 @@
 
 .chat_wrap .item.mymsg .box .msg {
    background: #f5f099;
+   box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
 }
 .chat_wrap .item.mymsg .box .time {
    right: auto;
@@ -98,9 +100,9 @@
    opacity: 1;
 }
 
-input[type="text"] {
+.cinput {
    border: 0;
-   width: 95%;
+   width: 90%;
    background: #fff;
    border-radius: 30px;
    height: 35px;
@@ -114,30 +116,57 @@ input[type="text"] {
 
 
 
-input[type="text"]::placeholder {
+.cinput::placeholder {
    color: #999
 }
 .chat-container {
   background-color: #4c6c73;
-  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60;
   padding: 10px;
   box-sizing: border-box;
-  
+  position: absolute;
+  right: 0%;  
 }
 
-.m{
-	cursor: pointer;
+.m {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
+
+.inquiry{
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  border: 0 none;
+  background-color: #e4f3ff;
+  overflow: hidden;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
 
 .top {
   position: absolute;
-  top: 677px; /*원하는 위치로 변경*/
-  left: 1px; /*원하는 위치로 변경*/
+  top: 86%; /*원하는 위치로 변경*/
+  left: 0%; /*원하는 위치로 변경*/
   cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  text-indent: -9999px;
 }
+
+.top_icon{width:47px;height:46px;background-image:url(/CapStonWeb/JSP/img/topicon.png)}
 
 .undermenu{
 	background-color: #e4f3ff;
@@ -145,4 +174,13 @@ input[type="text"]::placeholder {
 
 .bmsg{
 	cursor: pointer;
+   /* border: none;*/
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 7px;
 }
+
+

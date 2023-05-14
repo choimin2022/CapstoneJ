@@ -66,7 +66,8 @@
 			        	 <img class="tiger_menu" alt="image" src="/CapStonWeb/JSP/img/character_top2.png">
 			        	 	<div>
 			        		&nbsp;&nbsp;안녕하세요 영진전문대학교 컴퓨터정보계열 챗봇 와이거에요!<br>
-			        		&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을 질문해주시면 <br>&nbsp;&nbsp;안내해드릴게요!
+			        		&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을<br> 
+			        		&nbsp;&nbsp;질문해주시면 안내해드릴게요!
 			        		</div>
 			        	</div>	        
 						 <div class="menu" id="pmenu">

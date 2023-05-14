@@ -158,3 +158,67 @@ window.onload = function() {
   loadJsp("menu/menu.jsp");
 }
 
+//메뉴 동적 변환 2
+function loadmid(jspName) {
+  console.log("loadJsp 호출됨"); 
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("midbox").innerHTML = this.responseText;
+      if(jspName=='menu/login.jsp'){
+      applyLoginJavaScript();      
+      }
+      if(jspName=='menu/signup.jsp'){
+	  applysignupJavaScript();
+      }
+    }
+  };
+  xmlhttp.open("GET", jspName, true);
+  xmlhttp.send();
+}
+//상단 메뉴 클릭
+var menuBtn = document.querySelector('.btn_menu');
+var buttonArea = document.querySelector('.button_area');
+var closeButton = document.querySelector('.ico_close');
+var dimmed = document.querySelector('.dimmed');
+var midBox = document.querySelector('.midbox');
+var loginBtn = document.getElementById("login-button");
+var signupBtn = document.getElementById("signup-button");
+
+menuBtn.addEventListener('click', function() {
+    if (buttonArea.style.display === 'block') {
+        buttonArea.style.display = 'none';
+        dimmed.style.display = 'none';
+    } else {
+        buttonArea.style.display = 'block';
+        buttonArea.style.zIndex = '999';
+        dimmed.style.display = 'block';
+        dimmed.style.zIndex = '100';
+        
+        // 추가 기능은 여기
+    }
+});
+
+closeButton.addEventListener('click', function() {
+    buttonArea.style.display = 'none';
+    dimmed.style.display = 'none';
+});
+
+dimmed.addEventListener('click', function() {
+    if (buttonArea.style.display === 'block') {
+        buttonArea.style.display = 'none';
+        dimmed.style.display = 'none';
+        midBox.style.display = 'none';
+    }
+});
+
+loginBtn.addEventListener('click', function(){
+	midBox.style.display = 'block';
+	midBox.style.zIndex = '999';
+});
+
+signupBtn.addEventListener('click', function(){
+	midBox.style.display = 'block';
+	midBox.style.zIndex = '999';
+});
+

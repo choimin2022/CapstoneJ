@@ -30,21 +30,7 @@ function applyMenuJavaScript() {
       li.classList.toggle('checked');
     });
   });
-}
-
-		
-
-
-
-
-
-
-
-
-
-/*
-// 왼쪽 오른쪽 메뉴박스 스와이프 기능
-document.addEventListener('DOMContentLoaded', function() {
+  // 왼쪽 오른쪽 메뉴박스 스와이프 기능
   const menuButtons = document.querySelectorAll('.sendButton');
   const menuEl = document.getElementById('pmenu');
   let mouseDownX, mouseMoveX;
@@ -86,8 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
   menuEl.style.transform = 'translateX(0)';
 }
 
-
-});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -132,6 +116,4 @@ document.addEventListener('DOMContentLoaded', function() {
     menuEl.style.transform = 'translateX(0)';
   }
 });
-
-//
-*/
+}

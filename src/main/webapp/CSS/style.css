@@ -2,7 +2,6 @@
  body {
         margin: 0;
         overflow-x: hidden;
-        background-color: #999999;
         overflow-y: hidden;
       }
 textarea {
@@ -75,8 +74,12 @@ fonts {
     background: #ffffff url(/CapStonWeb/JSP/img/icon-microphone.jpg) no-repeat center;
     background-position: center;
     background-size: AUTO;
-    width:40px;
-    height:30px;
+    width: 30px;
+    height: 25px;
+    margin-right: 1%;
+    position: inherit;
+    top: 15px;
+    right: 6%;
 }
 
 
@@ -85,6 +88,49 @@ fonts {
 .dictate.on .ic-mike {display: none;}
 .dictate svg {display: none;}
 
+.btn_unit{position:absolute;right:10px;top:0}
+.btn_menu{padding:17px 5px}
+button{border:0 none;background-color:transparent;cursor:pointer}
+.ico_comm{overflow:hidden;display:inline-block;background-size:contain;background-repeat:no-repeat;vertical-align:top;text-indent:-9999px}
+.ico_menu{width:18px;height:16px;background-image:url(/CapStonWeb/JSP/img/ico_menu.png)}
 
+.button_area {
+display: none;
+position: absolute;
+top: 0px;
+right: 0;
+background-color: #ffffff;
+width: 15%;
+height: 100%;
+}
 
- 
+.btn_close{position:absolute;right:10px;top:12px;padding:5px}
+.ico_close{width:16px;height:16px;background-image:url(/CapStonWeb/JSP/img/ico_close.png)}
+
+.dimmed{display: none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);}
+
+.profile_box{padding-top:59px;text-align:center}
+.sub_h_tit{font-size:1.6rem;font-weight:500}
+
+.chat_logo_box{display:block;margin:25px auto 10px;width:56%;height:72%;border:1px solid #ddd;border-radius:50%;box-sizing:border-box}
+
+.sub_menu_item {
+    position: relative;
+    padding: 11px 0;
+    min-height: 41px;
+    border-bottom: 1px solid #939393;
+    box-sizing: border-box;
+}
+.sub_menu_list{
+    border-top: 1px solid #939393;
+  	position: absolute;
+ 	bottom: 50%;
+	left: 0;
+ 	width: 100%;
+}
+    
+.midbox{
+	position: absolute;
+	bottom: 40%;
+	margin: auto;
+}
