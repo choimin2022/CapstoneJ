@@ -54,7 +54,7 @@ width: 100%;
 }
 
 button[type="submit"] {
-background-color: #4CAF50;
+background-color: #2196f3;
 color: white;
 padding: 10px 20px;
 border: none;
@@ -65,7 +65,7 @@ margin-top: 10px;
 }
 
 button[type="submit"]:hover {
-background-color: #3e8e41;
+background-color: #0088f5;
 }
 
 .L2{

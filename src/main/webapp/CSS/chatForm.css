@@ -120,7 +120,7 @@
    color: #999
 }
 .chat-container {
-  background-color: #4c6c73;
+  background-color: #2196f3;
   bottom: 0;
   width: 100%;
   height: 60;
@@ -136,22 +136,6 @@
   height: 100%;
   box-sizing: border-box;
 }
-
-.inquiry{
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 5%;
-  border: 0 none;
-  background-color: #e4f3ff;
-  overflow: hidden;
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: top;
-}
-
 
 .top {
   position: absolute;
@@ -181,6 +165,7 @@
     padding: 5px;
     font-weight: bold;
     margin-top: 7px;
+    margin-right: 10px;
 }
 
 

@@ -25,7 +25,7 @@ function sendMessage(messages) {
   .catch(function(error) {	    
    // var decodedErrorMessage = decodeURIComponent(error.message);
   //  displayMessage(decodedErrorMessage);
-  gpt(messages)
+  // gpt(messages)
   });
 }
 

@@ -14,7 +14,7 @@ public class webDAO {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://database-1.c21qgjfkmmk8.ap-northeast-2.rds.amazonaws.com:3306/capstone?serverTimezone=UTC";
+			String url = "jdbc:mysql://database-1.c21qgjfkmmk8.ap-northeast-2.rds.amazonaws.com:3306/capstone?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8";
 			String user = "admin";
 			String pwd = "ccna1234";
 			conn = DriverManager.getConnection(url,user,pwd);

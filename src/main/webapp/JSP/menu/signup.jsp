@@ -50,7 +50,7 @@
 		      </div>
 		      <div class="form-group">
 		        <label for="phone" class="label L2">휴대폰번호</label>
-		        <input type="tel" id="phone" name="phone" placeholder="-빼고 입력해주세요"  class="signupInput" required>
+		        <input type="tel" id="phone" name="phone" placeholder="-빼고 입력해주세요"  class="signupInput">
 		      </div>
 		      <div class="form-group">
 		        <button type="submit" class="label">회원가입</button>

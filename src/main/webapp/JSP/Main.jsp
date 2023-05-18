@@ -31,14 +31,14 @@
 		<div id="top">
 			<!--상단바-->
 			<img class="tiger" alt="image" src="/CapStonWeb/JSP/img/character_top2.png">
-			<h1>와이거(Wyiger for comjeong)</h1>
+			<span class="topTitle">와이거(Wyiger for comjeong)</span>
 			<!--좌측 상단 메뉴-->
 			<div class="btn_unit">
-			<button type="button" class="">
-			<span class="">컴정 new</span>
+			<button type="button" class="topBtn boardBtn" id="" onclick="loadmid('menu/board.jsp')">
+			<span class="cjnew">컴정 new</span>컴정 new
 			</button>
-			<button type="button" class="">
-			<span class="">ai 상담</span>
+			<button type="button" class="topBtn aiChat">
+			<span class="cmc_btn">ai 상담</span>ai 상담
 			</button>
 			<button type="button" class="menu_btn btn_menu">
 			<span class="ico_comm ico_menu">메뉴 보기</span>
@@ -54,7 +54,7 @@
 				<div class="profile_box">
 					<h2 class="sub_h_tit">영진 컴정 챗봇</h2>
 					<img class="chat_logo_box" alt="image" src="/CapStonWeb/JSP/img/Logo2.png">
-					<div>비회원님 환영합니다</div>
+					<div><span class="loginName">비회원</span>님 환영합니다</div>
 				</div>  
 				<ul class="undermenu sub_menu_list">
 				<!--<li><button class="m" id="menu-button" onclick="loadJsp('menu/menu.jsp')">메뉴</button></li>-->
@@ -62,7 +62,16 @@
 				  <li class="sub_menu_item"><button class="m" id="signup-button" onclick="loadmid('menu/signup.jsp')">회원가입</button></li>
 				<!-- <li class="sub_menu_item"><button class="m" id="board-button" onclick="('menu/board.jsp')">컴정 New</button></li>-->
 				</ul>
-				<button class="inquiry" id="" onclick="('menu/')">문의하기</button>
+				
+				<div class="colorBack"><span class="colorSpan">챗봇 색상 커스텀</span>
+				<ul class="colorUl">
+				  <li class="colorLi1"><button class="colorB">1</button></li>
+				  <li class="colorLi2"><button class="colorB">2</button></li>
+				  <li class="colorLi3"><button class="colorB">3</button></li>
+				  <li><input type="color" id="colorPicker"></li>
+				</ul>
+				</div>
+				<button class="inquiry" id="" onclick="loadmid('menu/inquiry.jsp')">문의하기</button>
 				<button type="button" class="btn_close">
 					<span class="ico_comm ico_close">메뉴 레이어 닫기</span>
 				</button>
@@ -103,6 +112,12 @@
                 </g>
             </svg>
         </button>
+        <div class="icon-container">
+  <i class="iconV"></i>
+  <div class="info-box">음성인식 tip<br><br>1. 왼쪽 마이크를 누르거나 스페이스바로 음성인식 시작/종료<br><br>2. 챗봇 동작 명령어<br>&nbsp;●위로올려줘: 스크롤바가 위로 올라가요!
+  <br>&nbsp;●로그인: 로그인창이 나타나요!<br>&nbsp;●테마변경: 챗봇의 상단과 하단 테마 색을 고를 수 있어요!</div>
+</div>
+
 		    <ul id="searchOptions">
 		      <li value="학사공지">학사 공지 궁금해요</li>       
 		      <li value="">휴/복학문의 알려주세요</li>      
@@ -131,11 +146,14 @@
     </script> -->
 <script src="/CapStonWeb/JavaScript/ChatJ.js"></script>
 <script src= "/CapStonWeb/JavaScript/chatpost.js"></script>
-<script src="/CapStonWeb/JavaScript/gpt.js"></script>
+<script src="/CapStonWeb/JavaScript/aiChat.js"></script>
 <script src="/CapStonWeb/JavaScript/ChatList.js"></script>
 <script src="/CapStonWeb/JavaScript/Menu.js"></script>
 <script src="/CapStonWeb/JavaScript/login.js"></script>
 <script src="/CapStonWeb/JavaScript/signup.js"></script>
 <script src="/CapStonWeb/JavaScript/addMic.js"></script>
+<script src="/CapStonWeb/JavaScript/inquiry.js"></script>
+<script src="/CapStonWeb/JavaScript/topMenu.js"></script>
+<script src="/CapStonWeb/JavaScript/board.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="java.io.*, java.nio.charset.StandardCharsets" %>
+<%@ page import="java.io.*, java.nio.charset.StandardCharsets"%>
 
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*"%>
@@ -42,7 +42,6 @@
 	;
 	//----------------------------------------채팅
 	String con_link = request.getParameter("con_link");
-	
 
 	//------------------------------------------
 	//getParameter은 String방식으로 들고오기 때문에 int형으로 변형해줘야 된다.	
@@ -61,50 +60,80 @@
 	}
 	//-----------------------------------------------------------
 	%>
-						<div class="backmenu">
-			        	<div class="inmsg"> 
-			        	 <img class="tiger_menu" alt="image" src="/CapStonWeb/JSP/img/character_top2.png">
-			        	 	<div>
-			        		&nbsp;&nbsp;안녕하세요 영진전문대학교 컴퓨터정보계열 챗봇 와이거에요!<br>
-			        		&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을<br> 
-			        		&nbsp;&nbsp;질문해주시면 안내해드릴게요!
-			        		</div>
-			        	</div>	        
-						 <div class="menu" id="pmenu">
-								  <% Connection conn2 = webDAO.MySQLDBConnection(); 
-							     String webList = "select * from web_name"; 
-							     PreparedStatement pstmt2 = conn2.prepareStatement(webList);
-							     ResultSet rs2 = pstmt2.executeQuery(); 
-							     int count = 1;
-							  %>        
-							  <% while (rs2.next()) {
-							       web_code = rs2.getString("web_code"); web_name = rs2.getString("web_name"); web_url = rs2.getString("web_url"); 
-							       if(count <= 9) { %>		            
-							         <button type="button" class="sendButton" id="sendButton<%=count%>" value="<%=web_code%>">
-							           <img class="imgsize" src="/CapStonWeb/JSP/img/<%=web_name%>.gif"><%=web_name%>
-							         </button>
-							  <% } else { %>
-							         <button type="button" class="sendButton hidden" id="sendButton<%=count%>" value="<%=web_code%>">
-							           <img class="imgsize" src="/CapStonWeb/JSP/img/<%=web_name%>.gif"><%=web_name%>
-							         </button>
-							  <% } count++; } %>          
-						</div>
-	        
-			             <div class="buttonP">
-			               <ul>
-			               	<li id="pageOne"></li>
-			               	<li id="pageTwo"></li>
-			               </ul>
-			             </div>
-		             </div>
-		                      
-		     
+	<div class="backmenu">
+		<div class="inmsg">
+			<img class="tiger_menu" alt="image"
+				src="/CapStonWeb/JSP/img/character_top2.png">
+			<div>
+				&nbsp;&nbsp;안녕하세요 영진전문대학교 컴퓨터정보계열 챗봇 와이거에요!<br>
+				&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을<br>
+				&nbsp;&nbsp;질문해주시면 안내해드릴게요!
+			</div>
+		</div>
+		<div class="menu" id="pmenu">
+			<%
+			Connection conn2 = webDAO.MySQLDBConnection();
+			String webList = "select * from web_name";
+			PreparedStatement pstmt2 = conn2.prepareStatement(webList);
+			ResultSet rs2 = pstmt2.executeQuery();
+			int count = 1;
+			int buttonsPerPage = 9;
+			int pageNumber = 1;
+
+			while (rs2.next()) {
+				web_code = rs2.getString("web_code");
+				web_name = rs2.getString("web_name");
+				web_url = rs2.getString("web_url");
+
+				if (count <= buttonsPerPage) {
+			%>
+			<button type="button" class="sendButton" id="sendButton<%=count%>"
+				value="<%=web_code%>">
+				<img class="imgsize" src="/CapStonWeb/JSP/img/<%=web_name%>.gif">
+				<%=web_name%>
+			</button>
+			<%
+			} else {
+			%>
+			<button type="button" class="sendButton hidden"
+				id="sendButton<%=count%>" value="<%=web_code%>">
+				<img class="imgsize" src="/CapStonWeb/JSP/img/<%=web_name%>.gif">
+				<%=web_name%>
+			</button>
+			<%
+			}
+
+			count++;
+
+			if (count > (pageNumber * buttonsPerPage)) {
+			pageNumber++;
+			}
+			}
+			%>
+		</div>
+
+		<div class="buttonP">
+			<ul>
+				<%
+				for (int i = 1; i <= pageNumber; i++) {
+				%>
+				<li id="page<%=i%>"></li>
+				<%
+				}
+				%>
+			</ul>
+		</div>
+
+
+	</div>
+
+
 	<%
 	//----------------------------
 	webDAO.close(rs2);
 	webDAO.close(pstmt2);
 	webDAO.close(conn2);
 	%>
-<script src="/CapStonWeb/JavaScript/Menu.js"></script>
+	<script src="/CapStonWeb/JavaScript/menu.js"></script>
 </body>
 </html>

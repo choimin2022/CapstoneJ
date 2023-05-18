@@ -28,7 +28,7 @@ const store = {
             console.log(store.texts)
             const selectedValue = store.texts;
       
-	    if (e.results[0].isFinal&&selectedValue!="위로 올려줘.") {
+	    if (e.results[0].isFinal&&selectedValue!="위로 올려줘."&&selectedValue!="로그인."&&selectedValue!="테마 변경.") {
 		let selectedValue = Array.from(e.results)
 		.map(results => results[0].transcript).join("").trim(); // 마침표 제거 코드 추가
 		
@@ -50,6 +50,19 @@ const store = {
 		if(selectedValue=="위로 올려줘."){
 			$(".chat_wrap .inner").scrollTop(0);
 		}
+		if(selectedValue=="로그인."){
+			loadmid("menu/login.jsp");
+			midBox.style.display = 'block';
+			midBox.style.zIndex = '999';
+		}
+
+  if (selectedValue === "테마 변경.") {
+	  const colorPicker = document.getElementById("colorPicker");
+ 	  colorPicker.click();
+      const selectedColor = colorPicker.value;
+      document.getElementById('top').style.backgroundColor = selectedColor;
+      document.querySelector('.chat-container').style.backgroundColor = selectedColor;
+  }
 
 	     // options.style.display = 'none';
 	     // setTimeout(() => input.focus(), 100);  

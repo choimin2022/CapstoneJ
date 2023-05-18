@@ -1,14 +1,59 @@
-.boardmenu{
-	  background:#ffffff;
-	  width: 100%;
-}
+.notice-container {
+        width: 97%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        height: 604px;
+     	position: relative;
+    	bottom: -265px;
+    }
+        
+     .postBox {
+        height: 90%; /* 스크롤이 가능한 최대 높이 설정 */
+        overflow-y: auto; /* 세로 스크롤이 필요한 경우만 표시 */
+        margin-bottom: 20px; /* 게시물 상자와 다른 컨텐츠 사이의 간격 설정 */
+    }
 
-.boardTop{
-	text-align: center;
-	background:#f29292;
-}
-
-.boardBody{
-	height: 600px;
-	width: 1029px;
-}
+    .post {
+        /* 게시물 스타일 설정 */
+        margin-bottom: 20px; /* 개별 게시물 사이의 간격 설정 */
+    }
+        .notice-container h2 {
+            margin-top: 0;
+            margin-bottom: 4px;
+            font-size: 2rem;
+   		    font-weight: bold;
+        }
+        
+        .post-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+       .post-content {
+        margin-top: 1px;
+        padding: 10px;
+        display: none;
+        max-height: 422px;
+        text-align: left; /* 텍스트를 왼쪽 정렬로 설정 */
+        background-color: white;
+        border: 1px solid #939393;
+    }
+    
+    
+	 .postClose {
+	 position: relative;
+	 top: -48px;
+	 right: -99.6%;
+	 width: 15px;
+	 font-size: 20px;
+	 font-weight: bold;
+	 cursor: pointer;
+	}
