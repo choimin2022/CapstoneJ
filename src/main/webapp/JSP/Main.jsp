@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" href="/CapStonWeb/JSP/img/Logo2.png">
+<link rel="icon" href="/CapStonWeb/JSP/img/img_Main/Logo2.png">
 <meta charset="UTF-8">
 <title>컴퓨터정보계열 챗봇</title>
 
@@ -30,7 +30,7 @@
 	<div id="root">
 		<div id="top">
 			<!--상단바-->
-			<img class="tiger" alt="image" src="/CapStonWeb/JSP/img/character_top2.png">
+			<img class="tiger" alt="image" src="/CapStonWeb/JSP/img/img_Main/character_top2.png">
 			<span class="topTitle">와이거(Wyiger for comjeong)</span>
 			<!--좌측 상단 메뉴-->
 			<div class="btn_unit">
@@ -53,7 +53,7 @@
 			<div class="button_area">
 				<div class="profile_box">
 					<h2 class="sub_h_tit">영진 컴정 챗봇</h2>
-					<img class="chat_logo_box" alt="image" src="/CapStonWeb/JSP/img/Logo2.png">
+					<img class="chat_logo_box" alt="image" src="/CapStonWeb/JSP/img/img_Main/Logo2.png">
 					<div><span class="loginName">비회원</span>님 환영합니다</div>
 				</div>  
 				<ul class="undermenu sub_menu_list">
@@ -82,7 +82,7 @@
 		<div class="chat_wrap">
 		  <div class="inner">
 		    <div class="item yourmsg on">
-		      <img class="tiger_chat" alt="image" src="/CapStonWeb/JSP/img/character_main5.png">
+		      <img class="tiger_chat" alt="image" src="/CapStonWeb/JSP/img/img_Main/character_main5.png">
 		      <div class="box">
 		        <div class="msg menumsg" id="">	
 		        	<div id="changebox">	  		        	
@@ -113,10 +113,10 @@
             </svg>
         </button>
         <div class="icon-container">
-  <i class="iconV"></i>
-  <div class="info-box">음성인식 tip<br><br>1. 왼쪽 마이크를 누르거나 스페이스바로 음성인식 시작/종료<br><br>2. 챗봇 동작 명령어<br>&nbsp;●위로올려줘: 스크롤바가 위로 올라가요!
-  <br>&nbsp;●로그인: 로그인창이 나타나요!<br>&nbsp;●테마변경: 챗봇의 상단과 하단 테마 색을 고를 수 있어요!</div>
-</div>
+		  <i class="iconV"></i>
+		  <div class="info-box">음성인식 tip<br><br>1. 왼쪽 마이크를 누르거나 스페이스바로 음성인식 시작/종료<br><br>2. 챗봇 동작 명령어<br>&nbsp;●위로올려줘: 스크롤바가 위로 올라가요!
+		  <br>&nbsp;●로그인: 로그인창이 나타나요!<br>&nbsp;●테마변경: 챗봇의 상단과 하단 테마 색을 고를 수 있어요!</div>
+		</div>
 
 		    <ul id="searchOptions">
 		      <li value="학사공지">학사 공지 궁금해요</li>       

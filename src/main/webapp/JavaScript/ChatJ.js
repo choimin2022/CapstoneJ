@@ -56,49 +56,6 @@ function getValue() {
 }
 
 
-
-
-
-
-
-
-//챗봇 측 대답을 하는 함수 + url + 버튼, 메시지만 입력시 메시지만 나타남
-  function displayMessage(message, siteAddresses, buttonNames) {
-  var _class = "yourmsg";
-  var _val = message;
-  var buttonHtml = '';
-
-  if (siteAddresses && buttonNames && siteAddresses.length === buttonNames.length) {
-    for (var i = 0; i < siteAddresses.length; i++) {
-      buttonHtml += '<input type="button" class="bmsg" name="b' + i + '" value="' + buttonNames[i] + '" onclick="window.open(\'' + siteAddresses[i] + '\', \'_blank\')">';
-    }
-  }
-
-  var _tar = $(".chat_wrap .inner")
-    .append('<div class="item ' + _class + '"><img class="tiger_chat" alt="image" src="img/character_main5.png"><div class="box"><p class="msg">'
-      +_val
-      + '<br>'
-      + buttonHtml
-      + '</p><span class="time">'
-      + currentTime()
-      + '</span></div></div>');
-
-  var lastItem = $(".chat_wrap .inner")
-    .find(".item:last");
-  setTimeout(function() {
-    lastItem.addClass("on");
-  }, 10);
-
-  var position = lastItem.position().top
-    + $(".chat_wrap .inner").scrollTop();
-  console.log(position);
-
-  $(".chat_wrap .inner").stop().animate({
-    scrollTop: position
-  }, 500);
-}
-
-
 // 시간
 var currentTime = function() {
   var date = new Date();

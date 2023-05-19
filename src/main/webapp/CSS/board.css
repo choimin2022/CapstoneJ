@@ -57,3 +57,49 @@
 	 font-weight: bold;
 	 cursor: pointer;
 	}
+	
+.boardQ-container {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.boardQ-box {
+  display: none;
+  position: absolute;
+  bottom: -117px;
+  right: -335px;
+  background-color: #f1f1f1;
+  padding: 5px;
+  width: 369px;
+  text-align: left;
+}
+
+.boardQ-box::after {
+  content: "";
+  position: absolute;
+  bottom: 121px;
+  right: 346px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f1f1f1 transparent;
+}
+
+.boardQ-container:hover .boardQ-box {
+  display: block;
+}
+
+.boardQ{
+    width: 20px;
+    position: relative;
+    height: 30px;
+    top: -5px;
+    left: -9px;
+    background-image: url(/CapStonWeb/JSP/img/img_Main/boardQ.png);
+    overflow: hidden;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    text-indent: -9999px;
+}

@@ -44,7 +44,7 @@ loginForm.addEventListener('submit', (event) => {
 		alert('환영합니다!');
 		midbox.style.display = 'none';
 		displayMessage(name+'님 반가워요! 회원용 기능인 우측 상단에 ai상담, 컴정new의 좋아요, 댓글 그리고 문의하기를 이용하실 수 있습니다😀');
-		displayMessage('안녕',['https://www.naver.com/','www.youtube.com'],['네이버','유튜브'])
+		displayMessage('안녕',['https://www.naver.com/','www.youtube.com'],['네이버','유튜브']);
 	// 로그인 버튼을 로그아웃으로 바꿈
 		loginBtn.textContent = '로그아웃';
 		loginBtn.setAttribute('id', 'logout');

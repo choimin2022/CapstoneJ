@@ -28,8 +28,13 @@
 </head>
 <body>
 	   <div class="notice-container">
-        <h2>컴정 new</h2>
+        <h2>컴정 New</h2>
         <div class="postClose">X</div>
+        <div class="boardQ-container">
+		  <i class="boardQ"></i>
+		  <div class="boardQ-box">컴정 new tip<br><br>컴정 new는 컴퓨터정보계열의 구성원들이 다 같이 공유하고 싶거나 좋은 소식들을 알리는 공간이에요!
+		  <br><br>컴정 new에 게시하고 싶은 소식이 있으면 문의하기를 통해서 알려주세요!😀</div>
+		  </div>
         <div class="postBox">
         <div class="post">
             <div class="post-title" onclick="togglePost('post1')">

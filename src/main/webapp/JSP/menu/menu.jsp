@@ -63,7 +63,7 @@
 	<div class="backmenu">
 		<div class="inmsg">
 			<img class="tiger_menu" alt="image"
-				src="/CapStonWeb/JSP/img/character_top2.png">
+				src="/CapStonWeb/JSP/img/img_Main/character_top2.png">
 			<div>
 				&nbsp;&nbsp;안녕하세요 영진전문대학교 컴퓨터정보계열 챗봇 와이거에요!<br>
 				&nbsp;&nbsp;학사안내, 학생지원, IT/기술지원 등 학교생활에서 궁금한 점을<br>
@@ -89,7 +89,7 @@
 			%>
 			<button type="button" class="sendButton" id="sendButton<%=count%>"
 				value="<%=web_code%>">
-				<img class="imgsize" src="/CapStonWeb/JSP/img/<%=web_name%>.gif">
+				<img class="imgsize" src="/CapStonWeb/JSP/img/img_Main/<%=web_name%>.gif">
 				<%=web_name%>
 			</button>
 			<%
@@ -97,7 +97,7 @@
 			%>
 			<button type="button" class="sendButton hidden"
 				id="sendButton<%=count%>" value="<%=web_code%>">
-				<img class="imgsize" src="/CapStonWeb/JSP/img/<%=web_name%>.gif">
+				<img class="imgsize" src="/CapStonWeb/JSP/img/img_Main/<%=web_name%>.gif">
 				<%=web_name%>
 			</button>
 			<%

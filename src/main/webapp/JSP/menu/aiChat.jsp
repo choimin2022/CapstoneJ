@@ -29,7 +29,7 @@
 		<div class="chat_wrap">
 		  <div class="inner">
 		    <div class="item yourmsg on">
-		      <img class="tiger_chat" alt="image" src="/CapStonWeb/JSP/img/character_main5.png">
+		      <img class="tiger_chat" alt="image" src="/CapStonWeb/JSP/img/img_Main/character_main5.png">
 		      <div class="box">
 		        <div class="msg menumsg" id="">	
 		       		상담을 시작하겠습니다. 궁금하거나 고민이 있나요?	        	          		 		             	   
