@@ -6,8 +6,9 @@ public class boardDTO {
 	private String b_title;
 	private String b_content;
 	private int b_like;
-	private int b_check;
+	private boolean b_check;
 	private String date;
+	
 	public int getB_num() {
 		return b_num;
 	}
@@ -38,10 +39,11 @@ public class boardDTO {
 	public void setB_like(int b_like) {
 		this.b_like = b_like;
 	}
-	public int getB_check() {
+	
+	public boolean isB_check() {
 		return b_check;
 	}
-	public void setB_check(int b_check) {
+	public void setB_check(boolean b_check) {
 		this.b_check = b_check;
 	}
 	public String getDate() {
