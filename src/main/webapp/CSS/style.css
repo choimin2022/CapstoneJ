@@ -1,13 +1,16 @@
 /*ss*/
  @font-face {
-         font-family: 'jua';
- 	     src : url("/CapStonWeb/JSP/font/BMJUA_ttf.ttf")
+ 	     font-family: 'NotoSansKR';
+ 	     src : url("/CapStonWeb/JSP/font/NotoSansKR-Medium.otf") format('woff2'),;
+ 	     src : url("/CapStonWeb/JSP/font/NotoSansKR-Medium.otf") format('woff'),;
       	}
+
       	
  body {
         margin: 0;
         overflow-x: hidden;
         overflow-y: hidden;
+        font-family: 'Noto Sans KR', sans-serif !important; 
       }
 textarea {
 	width: 90%;
@@ -61,7 +64,6 @@ textarea {
 
 	}
 .topTitle {
-  font-family: Arial;
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
@@ -133,6 +135,7 @@ height: 100%;
  	bottom: 50%;
 	left: 0;
  	width: 100%;
+ 	font-family: 'NotoSansKR';
 }
     
 .midbox{
@@ -140,6 +143,7 @@ height: 100%;
 	bottom: 40%;
 	margin: auto;
 	width: 100%;
+	font-family: 'NotoSansKR';
 }
 
 .cmc_btn{width: 35px;

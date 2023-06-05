@@ -70,9 +70,9 @@ const store = {
         /* // Speech API END */
 		
 		
-			document.addEventListener('keydown', (event) => {
+		document.addEventListener('keydown', (event) => {
 		  if (event.code === 'Space') {
-		    if (store.isRecognizing && document.activeElement.tagName !== 'INPUT') {
+		    if (store.isRecognizing && document.activeElement.tagName !== 'INPUT'&& document.activeElement.tagName !== 'TEXTAREA') {
 		      active();
 		    } else {
 		      inactive();

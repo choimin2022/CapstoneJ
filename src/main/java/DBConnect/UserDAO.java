@@ -1,7 +1,7 @@
 package DBConnect;
 
-import DBConnect.webDAO; 
-import user.userDTO;
+import DBConnect.webDAO;
+import member.memberDTO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,7 +20,7 @@ public class UserDAO {
 	}
 
 // 회원가입 정보를 DB에 추가하는 메서드
-	public boolean addUser(userDTO user) {
+	public boolean addUser(memberDTO user) {
 	    Connection conn = null;
 	    PreparedStatement pstmt = null;
 	    boolean isSuccess = false;
@@ -78,8 +78,7 @@ public class UserDAO {
 		pstmt.setString(2, u_pass);
 		rs = pstmt.executeQuery();
 		if (rs.next()) {
-		name = rs.getString("u_name");
-		
+		name = rs.getString("u_name");		
 		}
 		} catch (SQLException e) {
 		e.printStackTrace();

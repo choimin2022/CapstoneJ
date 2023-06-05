@@ -1,3 +1,7 @@
+ body {
+        font-family: 'Noto Sans KR', sans-serif !important; 
+      }
+      
 .signupmenu {
 position: fixed;
 top: 50%;
@@ -7,7 +11,6 @@ background-color: white;
 border: 1px solid #ccc;
 padding: 20px;
 width: 300px;
-font-family: Arial, sans-serif;
 border-radius: 0.5rem;
 }
 

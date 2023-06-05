@@ -7,7 +7,7 @@ public class boardDTO {
 	private String b_content;
 	private int b_like;
 	private boolean b_check;
-	private String date;
+	private String b_date;
 	
 	public int getB_num() {
 		return b_num;
@@ -46,11 +46,11 @@ public class boardDTO {
 	public void setB_check(boolean b_check) {
 		this.b_check = b_check;
 	}
-	public String getDate() {
-		return date;
+	public String getB_date() {
+		return b_date;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setB_date(String b_date) {
+		this.b_date = b_date;
 	}
 	
 	

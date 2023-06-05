@@ -1,3 +1,7 @@
+  body {
+        font-family: 'Noto Sans KR', sans-serif !important; 
+      }
+ 
  /* 입력란과 자동완성 목록을 포함하는 부모 요소에 position: relative 속성을 추가합니다. */
   .container {
          position: relative;

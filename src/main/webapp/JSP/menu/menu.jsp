@@ -8,7 +8,7 @@
 <!-- mysql 연동 -->
 <%@ page import="web_con.web_conDTO"%>
 <!-- web_con 필드 -->
-<%@ page import="web_name.web_nameDTO"%>
+<%@ page import="web.web_name"%>
 <!-- web_name 필드 -->
 
 
@@ -35,8 +35,8 @@
 	request.setCharacterEncoding("UTF-8");
 
 	//---------------------------------------------------------------웹주소
-	String web_code = request.getParameter("web_code");
-	String web_name = request.getParameter("web_name");
+	String web_code = request.getParameter("w_code");
+	String web_name = request.getParameter("w_name");
 	;
 	String web_url = request.getParameter("web_url");
 	;
@@ -49,7 +49,7 @@
 			j_code=Integer.parseInt(request.getParameter("j_code"));	
 		}*/
 
-	Connection conn = webDAO.MySQLDBConnection();
+	/*Connection conn = webDAO.MySQLDBConnection();
 	//웹링크 내용을 모두 불러온다.
 	String web_con = "select * from web_con";
 	PreparedStatement pstmt = conn.prepareStatement(web_con);
@@ -57,7 +57,7 @@
 	if (rs.next()) {
 		web_code = rs.getString("web_code");
 		con_link = rs.getString("con_link");
-	}
+	}*/
 	//-----------------------------------------------------------
 	%>
 	<div class="backmenu">
@@ -81,9 +81,8 @@
 			int pageNumber = 1;
 
 			while (rs2.next()) {
-				web_code = rs2.getString("web_code");
-				web_name = rs2.getString("web_name");
-				web_url = rs2.getString("web_url");
+				web_code = rs2.getString("w_code");
+				web_name = rs2.getString("w_name");
 
 				if (count <= buttonsPerPage) {
 			%>

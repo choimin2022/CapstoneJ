@@ -1,1 +1,1 @@
-displayMessage('안녕',['https://www.naver.com/','www.youtube.com'],['네이버','유튜브']);
+displayMessage('ㅎㅇ',['www'],['버튼'],['/CapStonWeb/JSP/img/img_Main/character_main5.png'])

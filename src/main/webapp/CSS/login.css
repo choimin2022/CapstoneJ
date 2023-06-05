@@ -1,3 +1,7 @@
+ body {
+        font-family: 'Noto Sans KR', sans-serif !important; 
+      }
+
 .loginmenu {
 display: flex;
 flex-direction: column;

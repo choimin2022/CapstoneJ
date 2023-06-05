@@ -1,6 +1,6 @@
 package jserver;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader; 
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONObject;
 
-import user.userDTO;
+import member.memberDTO;
 import DBConnect.UserDAO;
 
 @WebServlet("/login")
@@ -41,6 +41,7 @@ public class login extends HttpServlet {
         if (u_name != null) {
             resultJson.put("result", "yeslogin");
             resultJson.put("name", u_name);
+            resultJson.put("id", u_id);
         } else {
             resultJson.put("result", "nologin");
         }

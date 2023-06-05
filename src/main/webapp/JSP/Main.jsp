@@ -79,7 +79,7 @@
 		
 
 
-		<div class="chat_wrap">
+		<div class="chat_wrap" id='chat_wrap'>
 		  <div class="inner">
 		    <div class="item yourmsg on">
 		      <img class="tiger_chat" alt="image" src="/CapStonWeb/JSP/img/img_Main/character_main5.png">

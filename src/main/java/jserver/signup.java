@@ -1,6 +1,6 @@
 package jserver;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader; 
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONObject;
 
-import user.userDTO;
+import member.memberDTO;
 import DBConnect.UserDAO;
 
 @WebServlet("/signup")
@@ -44,7 +44,7 @@ public class signup extends HttpServlet {
     	    response.getWriter().write("이메일 " + u_id + " 는 이미 사용중입니다.");
     	} else {
     	    // 새로운 회원 추가
-    	    userDTO user = new userDTO();
+    	    memberDTO user = new memberDTO();
     	    user.setU_id(u_id);
     	    user.setU_pass(u_pass);
     	    user.setU_name(u_name);

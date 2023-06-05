@@ -58,11 +58,11 @@ public class ChatbotServer extends HttpServlet {
         String conLink = null;
         try {
         	Connection conn = webDAO.MySQLDBConnection();        	       	
-        	PreparedStatement statement = conn.prepareStatement("select n.*, c.* from web_name n left join web_con c on n.web_code = c.web_code where n.web_name= ?");
+        	PreparedStatement statement = conn.prepareStatement("select * from web_name where w_name= ?");
         	statement.setString(1, searchWord);
         	ResultSet resultSet = statement.executeQuery();
         	if (resultSet.next()) {
-        	conLink = resultSet.getString("con_link");
+        	conLink = resultSet.getString("w_url");
         	System.out.println("db접속중(3) 링크 찾음: " + conLink);
         	}
           resultSet.close();

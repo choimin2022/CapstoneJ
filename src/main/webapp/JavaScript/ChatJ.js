@@ -124,3 +124,21 @@ function loadJsp(jspName) {
 window.onload = function() {
   loadJsp("menu/menu.jsp");
 }
+
+function loadgpt(jspName) {
+  console.log("loadJsp 호출됨"); 
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("root").innerHTML = this.responseText;
+      if(jspName=='menu/aiChat.jsp'){
+      applyMenuJavaScript(); // JSP가 로드되면 자바스크립트 함수 적용
+      }
+    }
+  };
+  xmlhttp.open("GET", jspName, true);
+  xmlhttp.send();
+ 
+  $(".chat_wrap .inner").scrollTop(0); // 클릭시 맨 위로 올라감
+  $("#topButton").hide();
+}

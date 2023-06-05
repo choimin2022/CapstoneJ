@@ -6,10 +6,6 @@
 <%@ page import="java.io.*"%>
 <%@ page import="DBConnect.webDAO"%>
 <!-- mysql 연동 -->
-<%@ page import="web_con.web_conDTO"%>
-<!-- web_con 필드 -->
-<%@ page import="web_name.web_nameDTO"%>
-<!-- web_name 필드 -->
 
 
 

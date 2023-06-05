@@ -1,7 +1,7 @@
 //메뉴 동적 변환 2
 
 function loadmid(jspName) {
-  console.log("loadJsp 호출됨");
+  console.log("loadJsp 호출됨: "+jspName);
    if (jspName == 'menu/inquiry.jsp'&&checkLoginStatus()==false) {
 	   alert('로그인이 필요합니다.')
 	   return;
@@ -90,6 +90,7 @@ boardBtn.addEventListener('click', function(){
 	midBox.style.zIndex = '999';
 });
 
+
 // 상단 하단 색상 변경
   const colorButton1 = document.querySelector('.colorLi1 button');
   const colorButton2 = document.querySelector('.colorLi2 button');
@@ -123,5 +124,5 @@ boardBtn.addEventListener('click', function(){
 	   alert('로그인이 필요합니다.')
 	   return;
    } 
-	displayMessage("안녕하세요! 고민 상담사 와이거에요! 고민이 있다면 저에게 고민 상담을 해보시겠어요?🤔",[gpt],["상담 시작하기"]);  
+	jspMessage("안녕하세요! 고민 상담사 와이거에요! 고민이 있다면 저에게 고민 상담을 해보시겠어요?🤔", "menu/aiChat.jsp","상담 시작하기");  
   });
