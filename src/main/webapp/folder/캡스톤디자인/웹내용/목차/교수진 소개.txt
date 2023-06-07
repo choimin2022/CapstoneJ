@@ -20,7 +20,7 @@ displayMessage6([
 전화:053-940-5526
 <br>
 E-mail:junsung AT yju.ac.kr",
-    "/CapStonWeb/JSP/img/img_Main/DukSung.jpg",
+    "/CapStonWeb/JSP/img/영진 컴정/AI빅데이터응용소프트웨어/임덕성.jpg",
     ["AI빅데이터 응용 소프트웨어과로 이동"],
     ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220"]
   ],
@@ -34,7 +34,7 @@ E-mail:junsung AT yju.ac.kr",
 전화:053-940-5295
 <br>
 E-mail:wjkim AT yju.ac.kr",
-    "/CapStonWeb/JSP/img/img_Main/WooJin.jpg",
+    "/CapStonWeb/JSP/img/영진 컴정/AI빅데이터응용소프트웨어/김우진.jpg",
   ]
 ]);
 
@@ -54,12 +54,12 @@ displayMessage6([
 전화:053-940-5302
 <br>
 E-mail:jwlee AT yju.ac.kr",
-    "/CapStonWeb/JSP/img/img_Main/JongWoong.jpg",
+    "/CapStonWeb/JSP/img/영진 컴정/정보보안게임컨텐츠/이종웅.jpg",
     ["AI클라우드 프로그래밍과로 이동"],
     ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220&document_srl=261"]
   ],
   [
-    "<br>김우진 교수
+    "<br>변진용 교수
     <br><br>
 전임교수
 <br>
@@ -68,7 +68,7 @@ E-mail:jwlee AT yju.ac.kr",
 전화:053-940-5295
 <br>
 E-mail:wjkim AT yju.ac.kr",
-    "/CapStonWeb/JSP/img/img_Main/JinYong.jpg",
+    "/CapStonWeb/JSP/img/영진 컴정/정보보안게임컨텐츠/변진용.jpg",
     ]
 ]);
 
@@ -93,9 +93,9 @@ displayMessage6([
 전화:053-940-5306
 <br>
 E-mail:jhjeong68 AT yju.ac.kr",
-    "/CapStonWeb/JSP/img/img_Main/JaeHo.jpg",
-    ["정보보안 게임 콘텐츠과로 이동"],
-    ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220&document_srl=261"]
+    "/CapStonWeb/JSP/img/영진 컴정/IT클라우드프로그래밍/정재호.jpg",
+    ["IT클라우드프로그래밍과로 이동"],
+    ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=222"]
   ],
   [
     "<br>김우진 교수
@@ -123,7 +123,7 @@ displayMessage6([
 전화:053-940-5301
 <br>
 E-mail:xmaskjr AT yju.ac.kr",
-    "/CapStonWeb/JSP/img/img_Main/JongYool.jpg",
+    "/CapStonWeb/JSP/img/영진 컴정/일본IT/김종율.jpg",
     ["일본 IT과로 이동"],
     ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220&document_srl=261"]
   ],
