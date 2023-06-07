@@ -1,1 +1,14 @@
-신기술 분야 공유대학 체계 구축과 인공지능 분야 디지털 신기술 인재양성을 위한 혁신공유대학 사업! 혁신공유대학 사업단의 정보를 불러왔습니다!<br><input type="button" class="bmsg" name="b0" value="인공지능사업" onclick="window.open('https://aicoss.yju.ac.kr/', '_blank')">  
+displayMessage6([
+  [
+    "첫 번째 페이지 메시지",
+    "/CapStonWeb/JSP/img/img_Main/character_main5.png",
+    ["첫 번째 페이지 버튼1", "첫 번째 페이지 버튼2"],
+    ["첫 번째 페이지 사이트1", "첫 번째 페이지 사이트2"]
+  ],
+  [
+    "두 번째 페이지 메시지",
+    "/CapStonWeb/JSP/img/img_Main/취업정보.gif",
+    ["두 번째 페이지 버튼1", "두 번째 페이지 버튼2"],
+    ["두 번째 페이지 사이트1", "두 번째 페이지 사이트2"]
+  ]
+]);

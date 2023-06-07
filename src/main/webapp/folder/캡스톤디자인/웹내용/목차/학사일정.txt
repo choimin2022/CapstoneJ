@@ -1,1 +1,1 @@
-영진전문대학 2023년 학사일정을 조회했습니다! 아래 메뉴를 클릭하면 학사일정을 확인할 수 있어요.<br><input type="button" class="bmsg" name="b0" value="학사일정" onclick="window.open('https://www.yju.ac.kr/kr/3248/subview.do', '_blank')">  
+displayMessage7()
