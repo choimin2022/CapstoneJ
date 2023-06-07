@@ -28,38 +28,6 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/webapp/JSP/img/img_Main/DukSung.jpg</name>
-			<type>1</type>
-			<location>C:/Users/dlgks/OneDrive/바탕 화면/캡스톤 관련 자료 모음/이미지/DukSung.jpg</location>
-		</link>
-		<link>
-			<name>src/main/webapp/JSP/img/img_Main/JaeHo.jpg</name>
-			<type>1</type>
-			<location>C:/Users/dlgks/OneDrive/바탕 화면/캡스톤 관련 자료 모음/이미지/JaeHo.jpg</location>
-		</link>
-		<link>
-			<name>src/main/webapp/JSP/img/img_Main/JinYong.jpg</name>
-			<type>1</type>
-			<location>C:/Users/dlgks/OneDrive/바탕 화면/캡스톤 관련 자료 모음/이미지/JinYong.jpg</location>
-		</link>
-		<link>
-			<name>src/main/webapp/JSP/img/img_Main/JongWoong.jpg</name>
-			<type>1</type>
-			<location>C:/Users/dlgks/OneDrive/바탕 화면/캡스톤 관련 자료 모음/이미지/JongWoong.jpg</location>
-		</link>
-		<link>
-			<name>src/main/webapp/JSP/img/img_Main/JongYool.jpg</name>
-			<type>1</type>
-			<location>C:/Users/dlgks/OneDrive/바탕 화면/캡스톤 관련 자료 모음/이미지/JongYool.jpg</location>
-		</link>
-		<link>
-			<name>src/main/webapp/JSP/img/img_Main/WooJin.jpg</name>
-			<type>1</type>
-			<location>C:/Users/dlgks/OneDrive/바탕 화면/캡스톤 관련 자료 모음/이미지/WooJin.jpg</location>
-		</link>
-	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1678958736766</id>
