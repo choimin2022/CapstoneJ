@@ -1,1 +1,14 @@
-컴퓨터 정보계열 챗봇이 소개하는!!! 컴퓨터 정보 계열엔 현재 훌륭한 스물 네분의 교수님들이 계십니다. 교수님들의 정보와 담당 과목을 보고 싶으시다면 아래 메뉴를 클릭해주세요.<br><input type="button" class="bmsg" name="b0" value="교수진 소개" onclick="window.open('https://com.yju.ac.kr/index.php?mid=board_Kwoo61', '_blank')">  
+displayMessage6([
+  [
+    "첫 번째 페이지 메시지",
+    "/CapStonWeb/JSP/img/img_Main/character_main5.png",
+    ["첫 번째 페이지 버튼1", "첫 번째 페이지 버튼2"],
+    ["첫 번째 페이지 사이트1", "첫 번째 페이지 사이트2"]
+  ],
+  [
+    "두 번째 페이지 메시지",
+    "/CapStonWeb/JSP/img/img_Main/취업정보.gif",
+    ["두 번째 페이지 버튼1", "두 번째 페이지 버튼2"],
+    ["두 번째 페이지 사이트1", "두 번째 페이지 사이트2"]
+  ]
+]);

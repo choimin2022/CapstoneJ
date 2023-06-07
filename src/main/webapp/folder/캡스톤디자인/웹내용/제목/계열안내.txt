@@ -1,1 +1,9 @@
-displayMessage('ㅎㅇ',['www'],['버튼'],['/CapStonWeb/JSP/img/img_Main/character_main5.png'])
+displayMessage4([
+  "첫 번째 메시지입니다.",
+  "두 번째 메시지입니다.",
+  "세 번째 메시지입니다."
+], [
+  "/CapStonWeb/JSP/img/img_Main/character_main5.png",
+  "/CapStonWeb/JSP/img/img_Main/Logo2.png",
+  "/CapStonWeb/JSP/img/img_Main/취업정보.gif"
+]);

@@ -175,4 +175,18 @@
     
 }
 
+.bmsg:hover {
+  background-color: skyblue;
+  color: #fff;
+}
+
+/* 아래 챗봇 대답 displayMassage2 글자 이미지 조정 css */
+.val-style {
+}
+
+.val2-style {
+}
+
+.message-image2{
+}
 
