@@ -1,9 +1,12 @@
-displayMessage4([
-  "첫 번째 메시지입니다.",
-  "두 번째 메시지입니다.",
-  "세 번째 메시지입니다."
-], [
-  "/CapStonWeb/JSP/img/img_Main/character_main5.png",
-  "/CapStonWeb/JSP/img/img_Main/Logo2.png",
-  "/CapStonWeb/JSP/img/img_Main/취업정보.gif"
-]);
+displayMessage('컴퓨터 정보계열 안내를 도와드릴게요📢
+<br>
+<br>🔸AI 빅데이터 응용 소프트웨어과
+<br>🔸정보 보안 게임 콘텐츠과
+<br>🔸AI 클라우드 프로그래밍과
+<br>🔸일본 IT과
+<br>
+총 4개의 과로 이루어져 있답니다.
+<br> 
+
+<br>아래 버튼을 클릭하면 계열 안내 페이지로 이동할 수 있어요😊
+',['https://com.yju.ac.kr/index.php?mid=page_OXGJ16','www.naver.com'],['계열안내 홈페이지','테스트']);

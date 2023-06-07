@@ -1,14 +1,142 @@
+displayMessage('
+컴퓨터 정보계열 교수님들을 소개해 드릴게요😍
+<br>
+<br>
+우리 계열에는 스물네 분의 교수님들이 계신답니다:)
+<br>
+아래 버튼을 클릭하거나 아래 페이지에서 교수님들의 정보와 담당과목을 확인해보세요!
+',['https://com.yju.ac.kr/index.php?mid=board_Kwoo61'],['교수진 소개 페이지로 이동']);
+
+
 displayMessage6([
   [
-    "첫 번째 페이지 메시지",
-    "/CapStonWeb/JSP/img/img_Main/character_main5.png",
-    ["첫 번째 페이지 버튼1", "첫 번째 페이지 버튼2"],
-    ["첫 번째 페이지 사이트1", "첫 번째 페이지 사이트2"]
+  
+    "<br>임덕성 학과장
+    <br><br>
+대학일자리 부센터장
+<br.>
+연구실:본관 302-2
+<br>
+전화:053-940-5526
+<br>
+E-mail:junsung AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/DukSung.jpg",
+    ["AI빅데이터 응용 소프트웨어과로 이동"],
+    ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220"]
   ],
   [
-    "두 번째 페이지 메시지",
-    "/CapStonWeb/JSP/img/img_Main/취업정보.gif",
-    ["두 번째 페이지 버튼1", "두 번째 페이지 버튼2"],
-    ["두 번째 페이지 사이트1", "두 번째 페이지 사이트2"]
+    "<br>김우진 교수
+    <br><br>
+전임교수
+<br>
+연구실:본관 302-3호
+<br>
+전화:053-940-5295
+<br>
+E-mail:wjkim AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/WooJin.jpg",
   ]
+]);
+
+
+
+
+
+displayMessage6([
+  [
+  
+    "<br>이종웅 학과장
+    <br><br>
+정보보안게임콘텐츠과 학과장
+<br>
+연구실:본관 310호
+<br>
+전화:053-940-5302
+<br>
+E-mail:jwlee AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/JongWoong.jpg",
+    ["AI클라우드 프로그래밍과로 이동"],
+    ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220&document_srl=261"]
+  ],
+  [
+    "<br>김우진 교수
+    <br><br>
+전임교수
+<br>
+연구실:본관 302-3호
+<br>
+전화:053-940-5295
+<br>
+E-mail:wjkim AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/JinYong.jpg",
+    ]
+]);
+
+
+
+
+
+
+
+
+
+
+displayMessage6([
+  [
+  
+    "<br>정재호 교수
+<br><br>
+전임교수
+<br>
+연구실:본관 331호
+<br>
+전화:053-940-5306
+<br>
+E-mail:jhjeong68 AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/JaeHo.jpg",
+    ["정보보안 게임 콘텐츠과로 이동"],
+    ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220&document_srl=261"]
+  ],
+  [
+    "<br>김우진 교수
+    <br><br>
+전임교수
+<br>
+연구실:본관 302-3호
+<br>
+전화:053-940-5295
+<br>
+E-mail:wjkim AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/JinYong.jpg",
+    ]
+]);
+
+displayMessage6([
+  [
+  
+    "<br>김종율 학과장
+<br><br>
+일본IT과 학과장
+<br>
+연구실:본관 327호
+<br>
+전화:053-940-5301
+<br>
+E-mail:xmaskjr AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/JongYool.jpg",
+    ["일본 IT과로 이동"],
+    ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=220&document_srl=261"]
+  ],
+  [
+    "<br>김우진 교수
+    <br><br>
+전임교수
+<br>
+연구실:본관 302-3호
+<br>
+전화:053-940-5295
+<br>
+E-mail:wjkim AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/img_Main/JinYong.jpg",
+    ]
 ]);

@@ -28,6 +28,38 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/webapp/JSP/img/img_Main/DukSung.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%20%EA%B4%80%EB%A0%A8%20%EC%9E%90%EB%A3%8C%20%EB%AA%A8%EC%9D%8C/%EC%9D%B4%EB%AF%B8%EC%A7%80/DukSung.jpg</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/JSP/img/img_Main/JaeHo.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%20%EA%B4%80%EB%A0%A8%20%EC%9E%90%EB%A3%8C%20%EB%AA%A8%EC%9D%8C/%EC%9D%B4%EB%AF%B8%EC%A7%80/JaeHo.jpg</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/JSP/img/img_Main/JinYong.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%20%EA%B4%80%EB%A0%A8%20%EC%9E%90%EB%A3%8C%20%EB%AA%A8%EC%9D%8C/%EC%9D%B4%EB%AF%B8%EC%A7%80/JinYong.jpg</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/JSP/img/img_Main/JongWoong.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%20%EA%B4%80%EB%A0%A8%20%EC%9E%90%EB%A3%8C%20%EB%AA%A8%EC%9D%8C/%EC%9D%B4%EB%AF%B8%EC%A7%80/JongWoong.jpg</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/JSP/img/img_Main/JongYool.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%20%EA%B4%80%EB%A0%A8%20%EC%9E%90%EB%A3%8C%20%EB%AA%A8%EC%9D%8C/%EC%9D%B4%EB%AF%B8%EC%A7%80/JongYool.jpg</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/JSP/img/img_Main/WooJin.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%20%EA%B4%80%EB%A0%A8%20%EC%9E%90%EB%A3%8C%20%EB%AA%A8%EC%9D%8C/%EC%9D%B4%EB%AF%B8%EC%A7%80/WooJin.jpg</locationURI>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1678958736766</id>
