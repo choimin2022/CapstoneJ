@@ -84,16 +84,16 @@ E-mail:wjkim AT yju.ac.kr",
 displayMessage6([
   [
   
-    "<br>정재호 교수
+    "<br>김경태 학과장
 <br><br>
 전임교수
 <br>
-연구실:본관 331호
+연구실:본관 328호
 <br>
-전화:053-940-5306
+전화:053-940-5300
 <br>
-E-mail:jhjeong68 AT yju.ac.kr",
-    "/CapStonWeb/JSP/img/영진 컴정/IT클라우드프로그래밍/정재호.jpg",
+E-mail:plants AT yju.ac.kr",
+    "/CapStonWeb/JSP/img/영진 컴정/IT클라우드프로그래밍/김경태.jpg",
     ["IT클라우드프로그래밍과로 이동"],
     ["https://com.yju.ac.kr/index.php?mid=board_Kwoo61&category=222"]
   ],
