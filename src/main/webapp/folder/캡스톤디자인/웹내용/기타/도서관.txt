@@ -1,1 +1,14 @@
-미래를 여는 지혜 영진전문대 도서관을 찾아주셔서 감사합니다! 아래 메뉴를 클릭하여 도서관 홈페이지로 이동하시면 찾고 싶은 자료를 검색할 수 있고 다양한 도서관 서비스와 이벤트에 참여하실 수 있어요!<br><input type="button" class="bmsg" name="b0" value="도서관" onclick="window.open('https://lib.yju.ac.kr/WebYJC/Aspx/main/index.aspx', '_blank')">  
+displayMessage3('영진전문대 도서관에 대해 알려드릴게요💡
+<br>
+아래 버튼에서 안내를 원하는 내용을 선택해주세요.
+  
+',['https://lib.yju.ac.kr/WebYJC/Aspx/board/boardList.aspx?tbname=1view','www.naver.com','https://lib.yju.ac.kr/WebYJC/Aspx/guide/guide02.aspx','https://lib.yju.ac.kr/WebYJC/Aspx/guide/guide02.aspx'   ],
+['도서관 공지사항','도서관 이용시간','도서관 이용수칙','졸업생 도서관 이용안내']);
+
+
+displayMessage('
+👇영진전문대학교 도서관 홒페이지에서 
+<br>
+ 다양한 서비스를 이용하려면 아래 버튼을 클릭해주세요.
+  
+',['https://lib.yju.ac.kr/WebYJC/Aspx/main/index.aspx'],['영진전문대 도서관 홈페이지']);
