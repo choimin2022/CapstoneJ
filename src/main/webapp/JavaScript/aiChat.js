@@ -131,21 +131,21 @@ const store = {
 		
 		selectedValue = selectedValue.replace(/.$/, ""); // 마침표 제거
 		
-		var _tar = $(".chat_wrap .inner").append('<div class="item mymsg"><div class="box"><p class="msg">' + selectedValue + '</p> <span class="time">' + currentTime() + '</span></div></div>');
-		var lastItem = $(".chat_wrap .inner").find(".item:last");
+		var _tar = $(".chat_wrap .g_inner").append('<div class="item mymsg"><div class="box"><p class="msg">' + selectedValue + '</p> <span class="time">' + currentTime() + '</span></div></div>');
+		var lastItem = $(".chat_wrap .g_inner").find(".item:last");
 		setTimeout(function() {
 		lastItem.addClass("on");
 		});
-		var position = lastItem.position().top + $(".chat_wrap .inner").scrollTop();
+		var position = lastItem.position().top + $(".chat_wrap g_inner").scrollTop();
 		console.log(position);
-		$(".chat_wrap .inner").stop().animate({
+		$(".chat_wrap .g_inner").stop().animate({
 		scrollTop: position
 		}, 500);
 		sendMessage(selectedValue);
 		}
 		
 		if(selectedValue=="위로 올려줘."){
-			$(".chat_wrap .inner").scrollTop(0);
+			$(".chat_wrap .g_inner").scrollTop(0);
 		}
 		if(selectedValue=="로그인."){
 			loadmid("menu/login.jsp");
