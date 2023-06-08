@@ -47,6 +47,8 @@
 			<!--가운데 나타나는 박스(로그인, 회원가입)-->
 			<div class="dimmed" style="z-index: 100;"></div>
 			<div class="midbox" id="midbox"></div>
+			<div class="gptbox" id="gptbox"></div>
+			
 			
 		</div>
 		    <!-- 아래 코드 우측 상단 메뉴-->
@@ -95,7 +97,7 @@
 
 		<button class="top top_icon" id="topButton">TOP</button>
 		<div class="chat-container">
-        <input type="text" class="mymsg cinput" placeholder="궁금한 것을 알려주세요" autocomplete="off"/>
+        <input type="text" id= "cinput" class="mymsg" placeholder="궁금한 것을 알려주세요" autocomplete="off"/>
          <button class="dictate">
             <i class="ic-mike"></i>
             <svg width="1.25rem" height="1.25rem" viewBox="0 0 100 100">

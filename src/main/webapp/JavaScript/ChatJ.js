@@ -130,9 +130,11 @@ function loadgpt(jspName) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("root").innerHTML = this.responseText;
+      document.getElementById("gptbox").innerHTML = this.responseText;
       if(jspName=='menu/aiChat.jsp'){
-      applyMenuJavaScript(); // JSP가 로드되면 자바스크립트 함수 적용
+      applyGptJavaScript(); // JSP가 로드되면 자바스크립트 함수 적용
+      gptbox.style.display = 'block';
+	  gptbox.style.zIndex = '999';
       }
     }
   };
