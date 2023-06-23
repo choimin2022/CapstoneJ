@@ -4,7 +4,7 @@ function gpt(message){   //온도 0 이면 계속 색다른 대답 온도 변경
 const model = 'text-davinci-003'	
 const headers = {
   "Content-Type": "application/json",
-  "Authorization": "Bearer " // api 키 넣는곳 Bearer 옆에 넣으면 됩니다
+  "Authorization": "Bearer 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" // api 키 넣는곳 Bearer 옆에 넣으면 됩니다
 };
 //https://api.openai.com/v1/engines/"+ model +"/completions  다빈치003
 //https://api.openai.com/v1/chat/completions  gpt 3.5
@@ -25,7 +25,8 @@ fetch("https://api.openai.com/v1/engines/text-davinci-003/completions", {
 .then(function(json) {
   const completions = json.choices;
   const text = completions[0].text;   
-  displayMessage(text); 
+  console.log(text);
+  gptMessage(text); 
 })
 .catch(function(error) {
   console.error(error);
@@ -50,7 +51,7 @@ $(function() {
       $(".chat_wrap .g_inner").stop().animate({
         scrollTop: position
       }, 500);  
-      if(_val == '상담 종료'){
+      if(_val == '상담 종료' || _val == '상담종료'){
 		  gptbox.style.display = 'none';
 	  }
       gpt(_val)          
@@ -141,7 +142,7 @@ const store = {
 		$(".chat_wrap .g_inner").stop().animate({
 		scrollTop: position
 		}, 500);
-		sendMessage(selectedValue);
+		gpt(selectedValue);
 		}
 		
 		if(selectedValue=="위로 올려줘."){
@@ -153,13 +154,9 @@ const store = {
 			midBox.style.zIndex = '999';
 		}
 
-  if (selectedValue === "테마 변경.") {
-	  const colorPicker = document.getElementById("colorPicker");
- 	  colorPicker.click();
-      const selectedColor = colorPicker.value;
-      document.getElementById('top').style.backgroundColor = selectedColor;
-      document.querySelector('.chat-container').style.backgroundColor = selectedColor;
-  }
+	  if (selectedValue === "상담 종료.") {
+		   gptbox.style.display = 'none';
+	  }
 
 	     // options.style.display = 'none';
 	     // setTimeout(() => input.focus(), 100);  

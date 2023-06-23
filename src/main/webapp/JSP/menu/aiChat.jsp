@@ -54,23 +54,22 @@
 		<button class="top top_icon" id="topButton">TOP</button>
 		<div class="chat-container">
         <input type="text" id="cinput" class="mymsg" placeholder="궁금한 것을 알려주세요" autocomplete="off"/>
-         <button class="dictate">
-            <i class="ic-mike"></i>
-            <svg width="1.25rem" height="1.25rem" viewBox="0 0 100 100">
-                <g stroke="#fff" stroke-width="15">
-                    <path d="M20,20 20,80">
-                        <animate attributeName="d" values="M20,40 20,60;M20,20 20,80;M20,40 20,60" dur="1s" repeatCount="indefinite" />
-                    </path>
-                    <path d="M50,10 50,90">
-                        <animate attributeName="d" values="M50,10 50,90;M50,40 50,60;M50,10 50,90" dur="1s" repeatCount="indefinite" />
-                    </path>
-                    <path d="M80,20 80,80">
-                        <animate attributeName="d" values="M80,40 80,60;M80,20 80,80;M80,40 80,60" dur="1s" repeatCount="indefinite" />
-                    </path>
-                </g>
-            </svg>
-        </button>
-        <div class="icon-container">
+	 	<button class="dictate">
+	            <i class="ic-mike"></i>
+	            <svg width="1.25rem" height="1.25rem" viewBox="0 0 100 100">
+	                <g stroke="#000" stroke-width="15">
+	                    <path d="M20,20 20,80">
+	                        <animate attributeName="d" values="M20,40 20,60;M20,20 20,80;M20,40 20,60" dur="1s" repeatCount="indefinite" />
+	                    </path>
+	                    <path d="M50,10 50,90">
+	                        <animate attributeName="d" values="M50,10 50,90;M50,40 50,60;M50,10 50,90" dur="1s" repeatCount="indefinite" />
+	                    </path>
+	                    <path d="M80,20 80,80">
+	                        <animate attributeName="d" values="M80,40 80,60;M80,20 80,80;M80,40 80,60" dur="1s" repeatCount="indefinite" />
+	                    </path>
+	                </g>
+	            </svg>
+	        </button>        <div class="icon-container">
 		  <i class="iconV"></i>
 		  <div class="info-box">음성인식 tip<br><br>1. 왼쪽 마이크를 누르거나 스페이스바로 음성인식 시작/종료<br><br>2. 챗봇 동작 명령어<br>&nbsp;●위로올려줘: 스크롤바가 위로 올라가요!
 		  <br>&nbsp;●로그인: 로그인창이 나타나요!<br>&nbsp;●테마변경: 챗봇의 상단과 하단 테마 색을 고를 수 있어요!</div>

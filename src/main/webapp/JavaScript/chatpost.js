@@ -75,6 +75,48 @@ function displayMessage(message, siteAddresses, buttonNames, imageAddresses) {
   }, 500);
 }
 
+function gptMessage(message, siteAddresses, buttonNames, imageAddresses) {
+  var _class = "yourmsg";
+  var _val = message;
+  var buttonHtml = '';
+  var imageHtml = '';
+
+  if (siteAddresses && buttonNames && siteAddresses.length === buttonNames.length) {
+    for (var i = 0; i < siteAddresses.length; i++) {
+      buttonHtml += '<input type="button" class="bmsg" name="b' + i + '" value="' + buttonNames[i] + '" onclick="window.open(\'' + siteAddresses[i] + '\', \'_blank\')">';
+    }
+  }
+
+  if (imageAddresses) {
+    for (var j = 0; j < imageAddresses.length; j++) {
+      imageHtml += '<img class="message-image" src="' + imageAddresses[j] + '" alt="image">';
+    }
+  }
+
+  var _tar = $(".chat_wrap .g_inner")
+    .append('<div class="item ' + _class + '"><img class="tiger_chat" alt="image" src="img/img_Main/character_main5.png"><div class="box"><p class="msg">'
+      + '<span class="val2-style">' + imageHtml + _val + '</span>'
+      + '<br>'
+      + buttonHtml
+      + '</p>'
+      + '<span class="time">'
+      + currentTime()
+      + '</span></div></div>');
+
+  var lastItem = $(".chat_wrap .g_inner")
+    .find(".item:last");
+  setTimeout(function() {
+    lastItem.addClass("on");
+  }, 10);
+
+  var position = lastItem.position().top
+    + $(".chat_wrap .g_inner").scrollTop();
+
+  $(".chat_wrap .g_inner").stop().animate({
+    scrollTop: position
+  }, 500);
+}
+
 
 function jspMessage(message, jspAddress, buttonName) {
   var _class = "yourmsg";

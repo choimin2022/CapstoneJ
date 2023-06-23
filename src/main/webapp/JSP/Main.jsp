@@ -101,7 +101,7 @@
          <button class="dictate">
             <i class="ic-mike"></i>
             <svg width="1.25rem" height="1.25rem" viewBox="0 0 100 100">
-                <g stroke="#fff" stroke-width="15">
+                <g stroke="#000" stroke-width="15">
                     <path d="M20,20 20,80">
                         <animate attributeName="d" values="M20,40 20,60;M20,20 20,80;M20,40 20,60" dur="1s" repeatCount="indefinite" />
                     </path>

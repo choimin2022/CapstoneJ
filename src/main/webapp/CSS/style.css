@@ -91,7 +91,7 @@ fonts {
 }
 
 
-.dictate.on {background: #000;}
+.dictate.on {background: #fff;}
 .dictate.on svg {display: block; margin: auto;}
 .dictate.on .ic-mike {display: none;}
 .dictate svg {display: none;}
