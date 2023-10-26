@@ -4,7 +4,7 @@ function gpt(message){   //온도 0 이면 계속 색다른 대답 온도 변경
 const model = 'text-davinci-003'	
 const headers = {
   "Content-Type": "application/json",
-  "Authorization": "Bearer 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" // api 키 넣는곳 Bearer 옆에 넣으면 됩니다
+  "Authorization": "Bearer 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" // api 키 넣는곳 Bearer 옆에 넣으면 됩니다
 };
 //https://api.openai.com/v1/engines/"+ model +"/completions  다빈치003
 //https://api.openai.com/v1/chat/completions  gpt 3.5

@@ -374,6 +374,7 @@ function changeContent(index) {
 
 var messages = [];
 var imageAddresses = [];
+var currentPageIndex = 0; // 현재 페이지 인덱스
 
 function displayMessage6(pages) {
   messages = pages.map(page => page[0]);
@@ -399,7 +400,7 @@ function displayMessage6(pages) {
 
   if (imageAddresses) {
     for (var j = 0; j < imageAddresses.length; j++) {
-      buttonHtml += '<li class="buttonP" onclick="changeContent2(' + j + ')">' + /*(j + 1) +*/ ' </li>';
+      buttonHtml += '<li class="buttonP" onclick="changeContent2(' + currentPageIndex + ', ' + j + ')">' + ' </li>';
     }
     imageHtml += '<img class="message-image ' + (imageAddresses.length > 0 ? 'active' : '') + '" src="' + imageAddresses[0] + '" alt="image">';
   }
@@ -442,13 +443,18 @@ function displayMessage6(pages) {
       li.classList.toggle('checked');
     });
   });
+
+  currentPageIndex++; // 다음 호출에 대한 페이지 인덱스 증가
 }
 
-function changeContent2(index) {
+function changeContent2(pageIndex, index) {
+	console.log(pageIndex, index);
   $(".message-image").removeClass("active");
   $(".message-image").eq(index).addClass("active");
-  $(".val2-style").html('<img class="message-image active" src="' + imageAddresses[index] + '" alt="image">' + messages[index]);
+  $(".val2-style[data-page-index='" + pageIndex + "']").html('<img class="message-image active" src="' + imageAddresses[index] + '" alt="image">' + messages[index]);
 }
+
+
 
 function displayMessage7() {
   var _class = "yourmsg";
